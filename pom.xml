@@ -16,6 +16,7 @@
         <module>demo-assert</module>
         <module>demo-linux-application</module>
         <module>demo-docker-application</module>
+        <module>demo-function</module>
     </modules>
     <packaging>pom</packaging>
 
