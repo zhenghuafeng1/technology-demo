@@ -39,3 +39,9 @@ windows系统文件路径：C:\Windows\System32\drivers\etc\hosts
 ##2、GitHub代码无法上传
 错误类型为：fatal: unable to access 'https://github.com/xxxxx/xxxxx.git/': The requested URL returned error: 403
 >在项目的隐藏文件夹 .git 中找到 config 文件，修改里面项目的URL为：git@github.com:仓库名/项目名.git
+
+错误类型为：fatal: unable to access 'https://github.com/XXX.git/': OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
+>使用命令 git config --global http.postBuffer 524288000
+
+错误类型为：fatal: unable to access 'https://github.com/XXX.git/': Failed to connect to github.com port 443: Timed out
+>使用命令 git config --global --unset http.proxy
