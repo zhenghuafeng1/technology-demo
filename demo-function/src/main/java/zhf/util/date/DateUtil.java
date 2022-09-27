@@ -20,12 +20,13 @@ import java.util.List;
 public class DateUtil {
 
     /**
-     * 获取指定日期之间所有日期（包含指定日期）
+     * 获取两个日期之间所有日期（包含指定日期）
      * @param startTime 开始日期yyyy-MM-dd
      * @param endTime 截止日期yyyy-MM-dd
+     * @param contain 是否包含指定日期
      * @return
      */
-    public static List<String> getBetweenDate(String startTime, String endTime){
+    public static List<String> getBetweenDate(String startTime, String endTime, boolean contain){
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         // 声明保存日期集合
         List<String> list = new ArrayList<String>();
@@ -36,6 +37,20 @@ public class DateUtil {
 
             //用Calendar 进行日期比较判断
             Calendar calendar = Calendar.getInstance();
+
+            //是否包含指定日期
+            if(!contain){
+                //开始日期-1
+                calendar.setTime(startDate);
+                calendar.add(Calendar.DATE, 1);
+                startDate=calendar.getTime();
+
+                //截止日期-1
+                calendar.setTime(endDate);
+                calendar.add(Calendar.DATE, -1);
+                endDate=calendar.getTime();
+            }
+
             while (startDate.getTime()<=endDate.getTime()){
                 // 把日期添加到集合
                 list.add(sdf.format(startDate));
@@ -53,7 +68,7 @@ public class DateUtil {
     }
 
     public static void main(String[] args) {
-       getBetweenDate("2021-09-27", "2022-09-27").forEach(date-> {
+       getBetweenDate("2022-09-01", "2022-09-27",false).forEach(date-> {
            log.info(date);
        });
     }
