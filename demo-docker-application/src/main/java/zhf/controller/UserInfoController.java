@@ -26,7 +26,7 @@ public class UserInfoController {
 
     @GetMapping("/getUserInfo/{id}")
     public UserInfoEntity getUserById(@PathVariable("id") String id) {
-        log.info("request get user");
+        log.info("request get user by {}", id);
         return userInfoService.get(id);
     }
 }
