@@ -1,0 +1,4 @@
+FROM openjdk:8-jre
+COPY demo-docker-application-1.0-SNAPSHOT.jar demo-docker-application.jar
+EXPOSE 8111
+ENTRYPOINT ["java", "-jar", "demo-docker-application.jar"]

@@ -15,8 +15,8 @@
         <module>demo-consumer</module>
         <module>demo-assert</module>
         <module>demo-linux-application</module>
-        <module>demo-docker-application</module>
         <module>demo-function</module>
+        <module>demo-docker-application</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -93,6 +93,23 @@
             <artifactId>lombok</artifactId>
             <version>1.16.16</version>
         </dependency>
+
+        <!--logback-->
+        <!--<dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.0.11</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.11</version>
+        </dependency>-->
 
     </dependencies>
     <build>
