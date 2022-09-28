@@ -1,6 +1,7 @@
 package zhf.api;
 
 import zhf.entity.UserInfoEntity;
+import zhf.enums.SexEnums;
 
 /**
  * @Autor zhenghf
@@ -9,6 +10,6 @@ import zhf.entity.UserInfoEntity;
  * @Customer
  **/
 public interface UserInfoService {
-    void getUserInfo();
-    void getUserSex(UserInfoEntity userInfo);
+    UserInfoEntity getUserInfo();
+    SexEnums getUserSex(UserInfoEntity userInfo);
 }
