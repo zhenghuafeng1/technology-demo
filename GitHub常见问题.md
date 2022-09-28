@@ -45,3 +45,6 @@ windows系统文件路径：C:\Windows\System32\drivers\etc\hosts
 
 错误类型为：fatal: unable to access 'https://github.com/XXX.git/': Failed to connect to github.com port 443: Timed out
 >使用命令 git config --global --unset http.proxy
+
+错误类型为：OpenSSL SSL_read: Connection was reset, errno 10054
+>使用命令 git config --global http.sslVerify "false"
