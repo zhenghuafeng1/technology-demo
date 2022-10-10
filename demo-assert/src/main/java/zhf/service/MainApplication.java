@@ -10,9 +10,8 @@ package zhf.service;
 public class MainApplication {
     public static void main(String[] args) {
 
-        for(int i=0;i<10;i++){
-            System.out.println(i);
-            assert false:"error";
+        for (int i = 0; i < 10; i++) {
+            assert false : "error";
         }
 
     }
