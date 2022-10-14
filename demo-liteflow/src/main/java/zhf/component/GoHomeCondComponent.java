@@ -7,5 +7,5 @@ package zhf.component;
  * @Description
  * @Version 1.0
  **/
-public class GoHomeCondComponent extends nodecon{
+public class GoHomeCondComponent {
 }
