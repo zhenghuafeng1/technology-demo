@@ -1,4 +1,4 @@
-package zhf.local;
+package zhf.http;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -6,18 +6,20 @@ import io.netty.channel.ChannelInitializer;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.http.HttpRequestDecoder;
+import io.netty.handler.codec.http.HttpResponseDecoder;
 import lombok.extern.slf4j.Slf4j;
-import zhf.local.localHandle.ServerHandle;
+import zhf.http.httpHandle.HttpServerHandler;
 
 /**
  * @Autor zhenghf
  * @Date 2022/10/17
- * @ClassName ServerApplication
+ * @ClassName HttpServerNettyApplication
  * @Description
  * @Version 1.0
  **/
 @Slf4j
-public class ServerApplication {
+public class HttpServerNettyApplication {
     public static void main(String[] args) throws InterruptedException {
         NioEventLoopGroup bossGroup = new NioEventLoopGroup();
         NioEventLoopGroup workGroup = new NioEventLoopGroup();
@@ -28,7 +30,9 @@ public class ServerApplication {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
-                            socketChannel.pipeline().addLast(new ServerHandle());
+                            socketChannel.pipeline().addLast(new HttpRequestDecoder());
+                            socketChannel.pipeline().addLast(new HttpResponseDecoder());
+                            socketChannel.pipeline().addLast(new HttpServerHandler());
                         }
                     });
             log.info("server start listen......");
