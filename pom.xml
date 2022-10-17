@@ -17,6 +17,7 @@
         <module>demo-linux-application</module>
         <module>demo-function</module>
         <module>demo-docker-application</module>
+        <module>demo-netty</module>
     </modules>
     <packaging>pom</packaging>
 
