@@ -6,8 +6,7 @@ import io.netty.channel.ChannelInitializer;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.http.HttpRequestDecoder;
-import io.netty.handler.codec.http.HttpResponseDecoder;
+import io.netty.handler.codec.http.HttpServerCodec;
 import lombok.extern.slf4j.Slf4j;
 import zhf.http.httpHandle.HttpServerHandler;
 
@@ -30,8 +29,7 @@ public class HttpServerNettyApplication {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
-                            socketChannel.pipeline().addLast(new HttpRequestDecoder());
-                            socketChannel.pipeline().addLast(new HttpResponseDecoder());
+                            socketChannel.pipeline().addLast(new HttpServerCodec());
                             socketChannel.pipeline().addLast(new HttpServerHandler());
                         }
                     });

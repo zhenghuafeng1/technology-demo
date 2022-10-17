@@ -21,7 +21,7 @@ public class HelloController {
     private HelloServiceImpl helloService;
 
     @GetMapping("/sayHello")
-    public String sayHello(){
+    public String sayHello() {
         return helloService.say();
     }
 }
