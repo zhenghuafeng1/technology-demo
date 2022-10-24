@@ -15,11 +15,11 @@ import java.net.Socket;
  * @Version 1.0
  **/
 @Slf4j
-public class BioHandler implements Runnable {
+public class BioServerHandler implements Runnable {
 
     private Socket socket;
 
-    public BioHandler(Socket socket) {
+    public BioServerHandler(Socket socket) {
         this.socket = socket;
     }
 

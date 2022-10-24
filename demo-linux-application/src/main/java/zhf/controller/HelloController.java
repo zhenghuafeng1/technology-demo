@@ -1,5 +1,6 @@
 package zhf.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import zhf.service.impl.HelloServiceImpl;
  * @Description
  * @Version 1.0
  **/
+@Slf4j
 @RestController
 @RequestMapping("/linux")
 public class HelloController {
@@ -22,6 +24,19 @@ public class HelloController {
 
     @GetMapping("/sayHello")
     public String sayHello() {
+        log.info("收到请求");
+        return helloService.say();
+    }
+
+    @GetMapping("/sayHello/{id}")
+    public String sayHello1(String id) {
+        log.info("收到请求id");
+        return helloService.say();
+    }
+
+    @GetMapping("/sayHello/{name}")
+    public String sayHello2(String name) {
+        log.info("收到请求name");
         return helloService.say();
     }
 }
