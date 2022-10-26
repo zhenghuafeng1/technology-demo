@@ -19,6 +19,7 @@
         <module>demo-docker-application</module>
         <module>demo-netty</module>
         <module>demo-io</module>
+        <module>demo-security</module>
     </modules>
     <packaging>pom</packaging>
 

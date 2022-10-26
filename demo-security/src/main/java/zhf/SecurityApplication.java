@@ -7,14 +7,14 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 
 /**
  * @Autor zhenghf
- * @Date 2022/9/26
- * @ClassName DemoLinuxApplication
+ * @Date 2022/10/25
+ * @ClassName SecurityApplication
  * @Description
  * @Version 1.0
  **/
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
-public class DemoLinuxApplication {
+public class SecurityApplication {
     public static void main(String[] args) {
-        SpringApplication.run(DemoLinuxApplication.class, args);
+        SpringApplication.run(SecurityApplication.class, args);
     }
 }
