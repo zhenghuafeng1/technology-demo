@@ -20,6 +20,7 @@
         <module>demo-netty</module>
         <module>demo-io</module>
         <module>demo-security</module>
+        <module>demo-mapstruct</module>
     </modules>
     <packaging>pom</packaging>
 

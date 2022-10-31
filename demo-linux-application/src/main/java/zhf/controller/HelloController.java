@@ -3,8 +3,10 @@ package zhf.controller;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import zhf.enums.PlatformEnum;
 import zhf.service.impl.HelloServiceImpl;
 
 /**
@@ -29,14 +31,8 @@ public class HelloController {
     }
 
     @GetMapping("/sayHello/{id}")
-    public String sayHello1(String id) {
-        log.info("收到请求id");
-        return helloService.say();
+    public String sayHello1(@PathVariable("id") String id) {
+        return PlatformEnum.getPlatform(id).getValue();
     }
 
-    @GetMapping("/sayHello/{name}")
-    public String sayHello2(String name) {
-        log.info("收到请求name");
-        return helloService.say();
-    }
 }
