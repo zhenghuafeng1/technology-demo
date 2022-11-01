@@ -21,6 +21,7 @@
         <module>demo-io</module>
         <module>demo-security</module>
         <module>demo-mapstruct</module>
+        <module>demo-enum</module>
     </modules>
     <packaging>pom</packaging>
 
