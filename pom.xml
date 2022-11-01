@@ -22,6 +22,7 @@
         <module>demo-security</module>
         <module>demo-mapstruct</module>
         <module>demo-enum</module>
+        <module>demo-flyway</module>
     </modules>
     <packaging>pom</packaging>
 
