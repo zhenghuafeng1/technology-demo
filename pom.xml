@@ -23,6 +23,7 @@
         <module>demo-mapstruct</module>
         <module>demo-enum</module>
         <module>demo-flyway</module>
+        <module>demo-tree</module>
     </modules>
     <packaging>pom</packaging>
 
