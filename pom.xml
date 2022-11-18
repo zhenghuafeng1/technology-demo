@@ -26,6 +26,7 @@
         <module>demo-tree</module>
         <module>demo-adapter</module>
         <module>demo-designMode</module>
+        <module>demo-zeromq</module>
     </modules>
     <packaging>pom</packaging>
 
