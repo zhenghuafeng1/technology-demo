@@ -24,6 +24,8 @@
         <module>demo-enum</module>
         <module>demo-flyway</module>
         <module>demo-tree</module>
+        <module>demo-adapter</module>
+        <module>demo-designMode</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -117,7 +119,11 @@
             <artifactId>logback-classic</artifactId>
             <version>1.0.11</version>
         </dependency>-->
-
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.6</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
