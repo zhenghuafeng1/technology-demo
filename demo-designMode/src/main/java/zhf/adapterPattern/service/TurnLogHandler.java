@@ -2,6 +2,7 @@ package zhf.adapterPattern.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
 
 /**
  * @Autor zhenghf
@@ -12,10 +13,17 @@ import org.springframework.core.annotation.Order;
  **/
 @Slf4j
 @Order(1)
-//@Component
+@Component
 public class TurnLogHandler extends AbstractDataHandler {
     @Override
-    void handle(String nickName, String id) {
-        log.info("this is TurnLogHandler");
+    public void isMatch(String name) {
+        log.info("this is TurnLogHandler isMatch" + name);
+        try {
+            throw new RuntimeException("eeeeeeeeeeeeee");
+        }
+        catch (Exception e) {
+            log.error(e.getMessage(), e);
+        }
+
     }
 }

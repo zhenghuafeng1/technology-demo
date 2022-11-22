@@ -1,0 +1,6 @@
+handler:
+  save_data: true
+  map:
+    name: name1
+    key1: 1111
+    key2: 2222

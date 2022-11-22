@@ -2,6 +2,7 @@ package zhf.adapterPattern.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
 
 /**
  * @Autor zhenghf
@@ -12,10 +13,10 @@ import org.springframework.core.annotation.Order;
  **/
 @Slf4j
 @Order(2)
-//@Component
+@Component
 public class ParamSetHandler extends AbstractDataHandler {
     @Override
-    void handle(String nickName, String id) {
-        log.info("this is ParamSetHandler");
+    public void isMatch(String name) {
+        log.info("this is ParamSetHandler isMatch" + name);
     }
 }

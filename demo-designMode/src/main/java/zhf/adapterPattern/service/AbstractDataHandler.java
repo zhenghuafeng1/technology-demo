@@ -12,14 +12,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public abstract class AbstractDataHandler implements IDataHandler {
 
+    @Override
     public void handle(String nickName) {
         log.info("this is AbstractDataHandler");
-        handle(nickName, "123456");
     }
 
-    abstract void handle(String nickName, String id);
-
-    public boolean isMatch() {
-        return false;
-    }
 }

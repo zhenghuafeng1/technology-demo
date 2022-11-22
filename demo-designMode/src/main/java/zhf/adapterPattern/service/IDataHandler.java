@@ -10,5 +10,5 @@ package zhf.adapterPattern.service;
 public interface IDataHandler {
     void handle(String nickName);
 
-    boolean isMatch();
+    void isMatch(String name);
 }

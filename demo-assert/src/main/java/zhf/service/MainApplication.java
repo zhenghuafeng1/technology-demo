@@ -1,5 +1,8 @@
 package zhf.service;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @Autor zhenghf
  * @Date 2022/9/26
@@ -10,9 +13,15 @@ package zhf.service;
 public class MainApplication {
     public static void main(String[] args) {
 
-        for (int i = 0; i < 10; i++) {
-            assert false : "error";
+        Map<String, String> map = new HashMap<>();
+        map.put("ruleParam", "Long,x,1073741824");
+
+        String ruleParam = map.get("ruleParam");
+        String[] split = ruleParam.split(",", -1);
+        for (String str : split) {
+            System.out.println(str);
         }
+        System.out.println(split.length);
 
     }
 }

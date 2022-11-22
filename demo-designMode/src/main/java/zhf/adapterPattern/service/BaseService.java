@@ -1,7 +1,5 @@
 package zhf.adapterPattern.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 /**
  * @Autor zhenghf
  * @Date 2022/11/16
@@ -11,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
  **/
 public abstract class BaseService {
 
-    @Autowired
-    protected DataSaveHandler dataSaveHandler;
+//    @Autowired
+//    protected DataSaveHandler dataSaveHandler;
 
     public abstract void init();
 
@@ -21,9 +19,9 @@ public abstract class BaseService {
     public abstract void processor();
 
     public void register() {
-        String nickName = getNickName();
-        if (dataSaveHandler.getService(nickName) == null) {
-            dataSaveHandler.addService(nickName, this);
-        }
+//        String nickName = getNickName();
+//        if (dataSaveHandler.getService(nickName) == null) {
+//            dataSaveHandler.addService(nickName, this);
+//        }
     }
 }
