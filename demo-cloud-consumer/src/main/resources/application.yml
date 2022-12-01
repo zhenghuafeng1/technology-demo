@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: cloud-zk-consumer #服务别名----注册zookeeper到注册中心名称
+  devtools:
+    restart:
+      enabled: false  #关闭自启动
+  cloud:
+    zookeeper:
+      #connect-string: 127.0.0.1:2181 #注册中心地址，多注册中心用逗号分隔
+      connect-string: 47.106.199.6:2181
+      discovery:
+        register: true  #是否启动服务注册
+        enabled: true #开启服务发现
+        # instance-id: ${spring.application.name}_${server.port} #用于向zookeeper注册的ID，默认为随机 UUID。
+        root: /localStarter #实例注册的根节点，默认为/services
+
