@@ -1,6 +1,9 @@
 spring:
   profiles:
     active: 8101
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
   application:
     #服务别名----注册zookeeper到注册中心名称
     name: cloud-zk-provider1

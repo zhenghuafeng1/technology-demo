@@ -1,4 +1,7 @@
 spring:
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
   application:
     name: cloud-zk-consumer #服务别名----注册zookeeper到注册中心名称
   devtools:
@@ -13,4 +16,3 @@ spring:
         enabled: true #开启服务发现
         # instance-id: ${spring.application.name}_${server.port} #用于向zookeeper注册的ID，默认为随机 UUID。
         root: /localStarter #实例注册的根节点，默认为/services
-

@@ -21,7 +21,7 @@ import java.util.UUID;
 @RequestMapping("/zookeeper")
 public class ZookeeperController implements ZookeeperApi {
 
-    @Value("${server.port}")
+    @Value("${server.port:8100}")
     private String serverPort;
 
     @GetMapping("/provider")

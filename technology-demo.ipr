@@ -1,128 +1,2620 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!--
-Licensed to the Apache Software Foundation (ASF) under one
-or more contributor license agreements.  See the NOTICE file
-distributed with this work for additional information
-regarding copyright ownership.  The ASF licenses this file
-to you under the Apache License, Version 2.0 (the
-"License"); you may not use this file except in compliance
-with the License.  You may obtain a copy of the License at
-
-  http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing,
-software distributed under the License is distributed on an
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, either express or implied.  See the License for the
-specific language governing permissions and limitations
-under the License.
--->
-<project version="4" relativePaths="false"> 
-  <component name="ProjectRootManager" version="2" assert-keyword="true" project-jdk-name="1.8" jdk-15="true"/>  
-  <component name="CodeStyleManager"> 
-    <option name="USE_DEFAULT_CODE_STYLE_SCHEME" value="true"/>  
-    <option name="CODE_STYLE_SCHEME" value=""/> 
-  </component>  
-  <component name="libraryTable"/>  
-  <component name="CompilerConfiguration"> 
-    <option name="DEFAULT_COMPILER" value="Javac"/>  
-    <option name="CLEAR_OUTPUT_DIRECTORY" value="false"/>  
-    <!--
+<project version="4">
+  <component name="AnalysisProjectProfileManager">
+    <option name="PROJECT_PROFILE" value="Project Default" />
+    <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
+    <scopes />
+    <profiles>
+      <profile profile_name="Project Default" version="1.0" is_locked="false">
+        <coding_rule class="AM_CREATES_EMPTY_JAR_FILE_ENTRY" level="MAJOR" enabled="true" />
+        <coding_rule class="AM_CREATES_EMPTY_ZIP_FILE_ENTRY" level="MAJOR" enabled="true" />
+        <coding_rule class="AT_OPERATION_SEQUENCE_ON_CONCURRENT_ABSTRACTION" level="CRITICAL" enabled="false" />
+        <coding_rule class="BAC_BAD_APPLET_CONSTRUCTOR" level="MAJOR" enabled="false" />
+        <coding_rule class="BC_BAD_CAST_TO_ABSTRACT_COLLECTION" level="MAJOR" enabled="true" />
+        <coding_rule class="BC_BAD_CAST_TO_CONCRETE_COLLECTION" level="CRITICAL" enabled="true" />
+        <coding_rule class="BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS" level="CRITICAL" enabled="true" />
+        <coding_rule class="BC_IMPOSSIBLE_CAST" level="BLOCKER" enabled="true" />
+        <coding_rule class="BC_IMPOSSIBLE_DOWNCAST" level="MAJOR" enabled="false" />
+        <coding_rule class="BC_IMPOSSIBLE_DOWNCAST_OF_TOARRAY" level="MAJOR" enabled="false" />
+        <coding_rule class="BC_IMPOSSIBLE_INSTANCEOF" level="CRITICAL" enabled="true" />
+        <coding_rule class="BC_UNCONFIRMED_CAST" level="CRITICAL" enabled="true" />
+        <coding_rule class="BC_UNCONFIRMED_CAST_OF_RETURN_VALUE" level="CRITICAL" enabled="false" />
+        <coding_rule class="BC_VACUOUS_INSTANCEOF" level="CRITICAL" enabled="true" />
+        <coding_rule class="BIT_ADD_OF_SIGNED_BYTE" level="CRITICAL" enabled="true" />
+        <coding_rule class="BIT_AND" level="CRITICAL" enabled="true" />
+        <coding_rule class="BIT_AND_ZZ" level="CRITICAL" enabled="true" />
+        <coding_rule class="BIT_IOR" level="CRITICAL" enabled="true" />
+        <coding_rule class="BIT_IOR_OF_SIGNED_BYTE" level="CRITICAL" enabled="true" />
+        <coding_rule class="BIT_SIGNED_CHECK" level="CRITICAL" enabled="true" />
+        <coding_rule class="BIT_SIGNED_CHECK_HIGH_BIT" level="CRITICAL" enabled="true" />
+        <coding_rule class="BOA_BADLY_OVERRIDDEN_ADAPTER" level="CRITICAL" enabled="true" />
+        <coding_rule class="BSHIFT_WRONG_ADD_PRIORITY" level="MAJOR" enabled="false" />
+        <coding_rule class="BX_BOXING_IMMEDIATELY_UNBOXED" level="MAJOR" enabled="true" />
+        <coding_rule class="BX_BOXING_IMMEDIATELY_UNBOXED_TO_PERFORM_COERCION" level="MAJOR" enabled="true" />
+        <coding_rule class="BX_UNBOXED_AND_COERCED_FOR_TERNARY_OPERATOR" level="MAJOR" enabled="true" />
+        <coding_rule class="BX_UNBOXING_IMMEDIATELY_REBOXED" level="CRITICAL" enabled="false" />
+        <coding_rule class="CAA_COVARIANT_ARRAY_ELEMENT_STORE" level="MAJOR" enabled="false" />
+        <coding_rule class="CAA_COVARIANT_ARRAY_FIELD" level="MAJOR" enabled="false" />
+        <coding_rule class="CAA_COVARIANT_ARRAY_LOCAL" level="MAJOR" enabled="false" />
+        <coding_rule class="CAA_COVARIANT_ARRAY_RETURN" level="MAJOR" enabled="false" />
+        <coding_rule class="CD_CIRCULAR_DEPENDENCY" level="MAJOR" enabled="false" />
+        <coding_rule class="CI_CONFUSED_INHERITANCE" level="MINOR" enabled="true" />
+        <coding_rule class="CNT_ROUGH_CONSTANT_VALUE" level="MAJOR" enabled="false" />
+        <coding_rule class="CN_IDIOM" level="MAJOR" enabled="true" />
+        <coding_rule class="CN_IDIOM_NO_SUPER_CALL" level="MAJOR" enabled="true" />
+        <coding_rule class="CN_IMPLEMENTS_CLONE_BUT_NOT_CLONEABLE" level="MAJOR" enabled="true" />
+        <coding_rule class="CO_ABSTRACT_SELF" level="MAJOR" enabled="true" />
+        <coding_rule class="CO_COMPARETO_INCORRECT_FLOATING" level="MAJOR" enabled="false" />
+        <coding_rule class="CO_COMPARETO_RESULTS_MIN_VALUE" level="CRITICAL" enabled="false" />
+        <coding_rule class="CO_SELF_NO_OBJECT" level="MAJOR" enabled="true" />
+        <coding_rule class="DB_DUPLICATE_BRANCHES" level="CRITICAL" enabled="true" />
+        <coding_rule class="DB_DUPLICATE_SWITCH_CLAUSES" level="CRITICAL" enabled="true" />
+        <coding_rule class="DC_DOUBLECHECK" level="MAJOR" enabled="true" />
+        <coding_rule class="DC_PARTIALLY_CONSTRUCTED" level="MAJOR" enabled="false" />
+        <coding_rule class="DE_MIGHT_DROP" level="MAJOR" enabled="true" />
+        <coding_rule class="DE_MIGHT_IGNORE" level="MAJOR" enabled="true" />
+        <coding_rule class="DLS_DEAD_LOCAL_INCREMENT_IN_RETURN" level="MAJOR" enabled="false" />
+        <coding_rule class="DLS_DEAD_LOCAL_STORE" level="CRITICAL" enabled="true" />
+        <coding_rule class="DLS_DEAD_LOCAL_STORE_IN_RETURN" level="CRITICAL" enabled="true" />
+        <coding_rule class="DLS_DEAD_LOCAL_STORE_OF_NULL" level="CRITICAL" enabled="true" />
+        <coding_rule class="DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD" level="CRITICAL" enabled="false" />
+        <coding_rule class="DLS_DEAD_STORE_OF_CLASS_LITERAL" level="CRITICAL" enabled="true" />
+        <coding_rule class="DLS_OVERWRITTEN_INCREMENT" level="CRITICAL" enabled="true" />
+        <coding_rule class="DL_SYNCHRONIZATION_ON_BOOLEAN" level="CRITICAL" enabled="true" />
+        <coding_rule class="DL_SYNCHRONIZATION_ON_BOXED_PRIMITIVE" level="CRITICAL" enabled="true" />
+        <coding_rule class="DL_SYNCHRONIZATION_ON_SHARED_CONSTANT" level="CRITICAL" enabled="true" />
+        <coding_rule class="DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_ANNOTATION_IS_NOT_VISIBLE_TO_REFLECTION" level="MAJOR" enabled="true" />
+        <coding_rule class="DMI_ARGUMENTS_WRONG_ORDER" level="CRITICAL" enabled="false" />
+        <coding_rule class="DMI_BAD_MONTH" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_BIGDECIMAL_CONSTRUCTED_FROM_DOUBLE" level="CRITICAL" enabled="false" />
+        <coding_rule class="DMI_BLOCKING_METHODS_ON_URL" level="BLOCKER" enabled="true" />
+        <coding_rule class="DMI_CALLING_NEXT_FROM_HASNEXT" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_COLLECTIONS_SHOULD_NOT_CONTAIN_THEMSELVES" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_COLLECTION_OF_URLS" level="BLOCKER" enabled="true" />
+        <coding_rule class="DMI_CONSTANT_DB_PASSWORD" level="BLOCKER" enabled="true" />
+        <coding_rule class="DMI_DOH" level="CRITICAL" enabled="false" />
+        <coding_rule class="DMI_EMPTY_DB_PASSWORD" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_ENTRY_SETS_MAY_REUSE_ENTRY_OBJECTS" level="CRITICAL" enabled="false" />
+        <coding_rule class="DMI_FUTILE_ATTEMPT_TO_CHANGE_MAXPOOL_SIZE_OF_SCHEDULED_THREAD_POOL_EXECUTOR" level="MINOR" enabled="true" />
+        <coding_rule class="DMI_HARDCODED_ABSOLUTE_FILENAME" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_INVOKING_HASHCODE_ON_ARRAY" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_INVOKING_TOSTRING_ON_ANONYMOUS_ARRAY" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_INVOKING_TOSTRING_ON_ARRAY" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_LONG_BITS_TO_DOUBLE_INVOKED_ON_INT" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_NONSERIALIZABLE_OBJECT_WRITTEN" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_RANDOM_USED_ONLY_ONCE" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_SCHEDULED_THREAD_POOL_EXECUTOR_WITH_ZERO_CORE_THREADS" level="MINOR" enabled="true" />
+        <coding_rule class="DMI_THREAD_PASSED_WHERE_RUNNABLE_EXPECTED" level="MAJOR" enabled="true" />
+        <coding_rule class="DMI_UNSUPPORTED_METHOD" level="MAJOR" enabled="true" />
+        <coding_rule class="DMI_USELESS_SUBSTRING" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_USING_REMOVEALL_TO_CLEAR_COLLECTION" level="CRITICAL" enabled="true" />
+        <coding_rule class="DMI_VACUOUS_CALL_TO_EASYMOCK_METHOD" level="MINOR" enabled="true" />
+        <coding_rule class="DMI_VACUOUS_SELF_COLLECTION_CALL" level="CRITICAL" enabled="true" />
+        <coding_rule class="DM_BOOLEAN_CTOR" level="MAJOR" enabled="true" />
+        <coding_rule class="DM_BOXED_PRIMITIVE_FOR_COMPARE" level="MAJOR" enabled="false" />
+        <coding_rule class="DM_BOXED_PRIMITIVE_FOR_PARSING" level="MAJOR" enabled="false" />
+        <coding_rule class="DM_BOXED_PRIMITIVE_TOSTRING" level="MAJOR" enabled="true" />
+        <coding_rule class="DM_CONVERT_CASE" level="INFO" enabled="true" />
+        <coding_rule class="DM_DEFAULT_ENCODING" level="CRITICAL" enabled="false" />
+        <coding_rule class="DM_EXIT" level="MAJOR" enabled="true" />
+        <coding_rule class="DM_FP_NUMBER_CTOR" level="MAJOR" enabled="true" />
+        <coding_rule class="DM_GC" level="MAJOR" enabled="true" />
+        <coding_rule class="DM_INVALID_MIN_MAX" level="MAJOR" enabled="false" />
+        <coding_rule class="DM_MONITOR_WAIT_ON_CONDITION" level="MAJOR" enabled="true" />
+        <coding_rule class="DM_NEW_FOR_GETCLASS" level="MAJOR" enabled="true" />
+        <coding_rule class="DM_NEXTINT_VIA_NEXTDOUBLE" level="MAJOR" enabled="true" />
+        <coding_rule class="DM_NUMBER_CTOR" level="CRITICAL" enabled="true" />
+        <coding_rule class="DM_RUN_FINALIZERS_ON_EXIT" level="MAJOR" enabled="true" />
+        <coding_rule class="DM_STRING_CTOR" level="MAJOR" enabled="true" />
+        <coding_rule class="DM_STRING_TOSTRING" level="INFO" enabled="true" />
+        <coding_rule class="DM_STRING_VOID_CTOR" level="MAJOR" enabled="true" />
+        <coding_rule class="DM_USELESS_THREAD" level="MAJOR" enabled="true" />
+        <coding_rule class="DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED" level="MAJOR" enabled="true" />
+        <coding_rule class="DP_DO_INSIDE_DO_PRIVILEGED" level="MAJOR" enabled="true" />
+        <coding_rule class="EC_ARRAY_AND_NONARRAY" level="CRITICAL" enabled="true" />
+        <coding_rule class="EC_BAD_ARRAY_COMPARE" level="CRITICAL" enabled="true" />
+        <coding_rule class="EC_INCOMPATIBLE_ARRAY_COMPARE" level="MAJOR" enabled="false" />
+        <coding_rule class="EC_NULL_ARG" level="CRITICAL" enabled="true" />
+        <coding_rule class="EC_UNRELATED_CLASS_AND_INTERFACE" level="CRITICAL" enabled="true" />
+        <coding_rule class="EC_UNRELATED_INTERFACES" level="CRITICAL" enabled="true" />
+        <coding_rule class="EC_UNRELATED_TYPES" level="CRITICAL" enabled="true" />
+        <coding_rule class="EC_UNRELATED_TYPES_USING_POINTER_EQUALITY" level="CRITICAL" enabled="true" />
+        <coding_rule class="EI_EXPOSE_REP" level="MAJOR" enabled="true" />
+        <coding_rule class="EI_EXPOSE_REP2" level="MAJOR" enabled="true" />
+        <coding_rule class="EI_EXPOSE_STATIC_REP2" level="MAJOR" enabled="true" />
+        <coding_rule class="EQ_ABSTRACT_SELF" level="MAJOR" enabled="true" />
+        <coding_rule class="EQ_ALWAYS_FALSE" level="BLOCKER" enabled="true" />
+        <coding_rule class="EQ_ALWAYS_TRUE" level="BLOCKER" enabled="true" />
+        <coding_rule class="EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS" level="MAJOR" enabled="true" />
+        <coding_rule class="EQ_COMPARETO_USE_OBJECT_EQUALS" level="CRITICAL" enabled="true" />
+        <coding_rule class="EQ_COMPARING_CLASS_NAMES" level="MAJOR" enabled="true" />
+        <coding_rule class="EQ_DOESNT_OVERRIDE_EQUALS" level="MAJOR" enabled="false" />
+        <coding_rule class="EQ_DONT_DEFINE_EQUALS_FOR_ENUM" level="MAJOR" enabled="true" />
+        <coding_rule class="EQ_GETCLASS_AND_CLASS_CONSTANT" level="CRITICAL" enabled="true" />
+        <coding_rule class="EQ_OTHER_NO_OBJECT" level="MAJOR" enabled="true" />
+        <coding_rule class="EQ_OTHER_USE_OBJECT" level="MAJOR" enabled="true" />
+        <coding_rule class="EQ_OVERRIDING_EQUALS_NOT_SYMMETRIC" level="MAJOR" enabled="true" />
+        <coding_rule class="EQ_SELF_NO_OBJECT" level="MAJOR" enabled="true" />
+        <coding_rule class="EQ_SELF_USE_OBJECT" level="MAJOR" enabled="true" />
+        <coding_rule class="EQ_UNUSUAL" level="MINOR" enabled="true" />
+        <coding_rule class="ES_COMPARING_PARAMETER_STRING_WITH_EQ" level="MAJOR" enabled="true" />
+        <coding_rule class="ES_COMPARING_STRINGS_WITH_EQ" level="MAJOR" enabled="true" />
+        <coding_rule class="ESync_EMPTY_SYNC" level="MAJOR" enabled="true" />
+        <coding_rule class="FB_MISSING_EXPECTED_WARNING" level="CRITICAL" enabled="false" />
+        <coding_rule class="FB_UNEXPECTED_WARNING" level="CRITICAL" enabled="false" />
+        <coding_rule class="FE_FLOATING_POINT_EQUALITY" level="CRITICAL" enabled="true" />
+        <coding_rule class="FE_TEST_IF_EQUAL_TO_NOT_A_NUMBER" level="CRITICAL" enabled="true" />
+        <coding_rule class="FI_EMPTY" level="MAJOR" enabled="true" />
+        <coding_rule class="FI_EXPLICIT_INVOCATION" level="MAJOR" enabled="true" />
+        <coding_rule class="FI_FINALIZER_NULLS_FIELDS" level="MAJOR" enabled="true" />
+        <coding_rule class="FI_FINALIZER_ONLY_NULLS_FIELDS" level="MAJOR" enabled="true" />
+        <coding_rule class="FI_MISSING_SUPER_CALL" level="MAJOR" enabled="true" />
+        <coding_rule class="FI_NULLIFY_SUPER" level="CRITICAL" enabled="true" />
+        <coding_rule class="FI_PUBLIC_SHOULD_BE_PROTECTED" level="MAJOR" enabled="true" />
+        <coding_rule class="FI_USELESS" level="MINOR" enabled="true" />
+        <coding_rule class="FL_MATH_USING_FLOAT_PRECISION" level="CRITICAL" enabled="true" />
+        <coding_rule class="GC_UNCHECKED_TYPE_IN_GENERIC_CALL" level="CRITICAL" enabled="true" />
+        <coding_rule class="GC_UNRELATED_TYPES" level="CRITICAL" enabled="true" />
+        <coding_rule class="HE_EQUALS_NO_HASHCODE" level="MAJOR" enabled="true" />
+        <coding_rule class="HE_EQUALS_USE_HASHCODE" level="CRITICAL" enabled="true" />
+        <coding_rule class="HE_HASHCODE_NO_EQUALS" level="CRITICAL" enabled="true" />
+        <coding_rule class="HE_HASHCODE_USE_OBJECT_EQUALS" level="CRITICAL" enabled="true" />
+        <coding_rule class="HE_INHERITS_EQUALS_USE_HASHCODE" level="CRITICAL" enabled="true" />
+        <coding_rule class="HE_SIGNATURE_DECLARES_HASHING_OF_UNHASHABLE_CLASS" level="CRITICAL" enabled="true" />
+        <coding_rule class="HE_USE_OF_UNHASHABLE_CLASS" level="CRITICAL" enabled="true" />
+        <coding_rule class="HRS_REQUEST_PARAMETER_TO_COOKIE" level="MAJOR" enabled="true" />
+        <coding_rule class="HRS_REQUEST_PARAMETER_TO_HTTP_HEADER" level="MAJOR" enabled="true" />
+        <coding_rule class="HSC_HUGE_SHARED_STRING_CONSTANT" level="CRITICAL" enabled="true" />
+        <coding_rule class="IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD" level="MAJOR" enabled="true" />
+        <coding_rule class="ICAST_BAD_SHIFT_AMOUNT" level="CRITICAL" enabled="true" />
+        <coding_rule class="ICAST_IDIV_CAST_TO_DOUBLE" level="CRITICAL" enabled="true" />
+        <coding_rule class="ICAST_INTEGER_MULTIPLY_CAST_TO_LONG" level="CRITICAL" enabled="true" />
+        <coding_rule class="ICAST_INT_2_LONG_AS_INSTANT" level="CRITICAL" enabled="false" />
+        <coding_rule class="ICAST_INT_CAST_TO_DOUBLE_PASSED_TO_CEIL" level="CRITICAL" enabled="true" />
+        <coding_rule class="ICAST_INT_CAST_TO_FLOAT_PASSED_TO_ROUND" level="CRITICAL" enabled="true" />
+        <coding_rule class="ICAST_QUESTIONABLE_UNSIGNED_RIGHT_SHIFT" level="CRITICAL" enabled="true" />
+        <coding_rule class="IC_INIT_CIRCULARITY" level="CRITICAL" enabled="true" />
+        <coding_rule class="IC_SUPERCLASS_USES_SUBCLASS_DURING_INITIALIZATION" level="MAJOR" enabled="true" />
+        <coding_rule class="IIL_ELEMENTS_GET_LENGTH_IN_LOOP" level="MAJOR" enabled="false" />
+        <coding_rule class="IIL_PATTERN_COMPILE_IN_LOOP" level="MAJOR" enabled="false" />
+        <coding_rule class="IIL_PATTERN_COMPILE_IN_LOOP_INDIRECT" level="MAJOR" enabled="false" />
+        <coding_rule class="IIL_PREPARE_STATEMENT_IN_LOOP" level="MAJOR" enabled="false" />
+        <coding_rule class="IIO_INEFFICIENT_INDEX_OF" level="MAJOR" enabled="false" />
+        <coding_rule class="IIO_INEFFICIENT_LAST_INDEX_OF" level="MAJOR" enabled="false" />
+        <coding_rule class="IJU_ASSERT_METHOD_INVOKED_FROM_RUN_METHOD" level="CRITICAL" enabled="true" />
+        <coding_rule class="IJU_BAD_SUITE_METHOD" level="CRITICAL" enabled="true" />
+        <coding_rule class="IJU_NO_TESTS" level="CRITICAL" enabled="true" />
+        <coding_rule class="IJU_SETUP_NO_SUPER" level="CRITICAL" enabled="true" />
+        <coding_rule class="IJU_SUITE_NOT_STATIC" level="CRITICAL" enabled="true" />
+        <coding_rule class="IJU_TEARDOWN_NO_SUPER" level="CRITICAL" enabled="true" />
+        <coding_rule class="IL_CONTAINER_ADDED_TO_ITSELF" level="CRITICAL" enabled="true" />
+        <coding_rule class="IL_INFINITE_LOOP" level="CRITICAL" enabled="true" />
+        <coding_rule class="IL_INFINITE_RECURSIVE_LOOP" level="CRITICAL" enabled="true" />
+        <coding_rule class="IMA_INEFFICIENT_MEMBER_ACCESS" level="MAJOR" enabled="false" />
+        <coding_rule class="IMSE_DONT_CATCH_IMSE" level="MAJOR" enabled="true" />
+        <coding_rule class="IM_AVERAGE_COMPUTATION_COULD_OVERFLOW" level="CRITICAL" enabled="true" />
+        <coding_rule class="IM_BAD_CHECK_FOR_ODD" level="CRITICAL" enabled="true" />
+        <coding_rule class="IM_MULTIPLYING_RESULT_OF_IREM" level="CRITICAL" enabled="true" />
+        <coding_rule class="INT_BAD_COMPARISON_WITH_INT_VALUE" level="CRITICAL" enabled="false" />
+        <coding_rule class="INT_BAD_COMPARISON_WITH_NONNEGATIVE_VALUE" level="CRITICAL" enabled="true" />
+        <coding_rule class="INT_BAD_COMPARISON_WITH_SIGNED_BYTE" level="CRITICAL" enabled="true" />
+        <coding_rule class="INT_BAD_REM_BY_1" level="CRITICAL" enabled="true" />
+        <coding_rule class="INT_VACUOUS_BIT_OPERATION" level="CRITICAL" enabled="true" />
+        <coding_rule class="INT_VACUOUS_COMPARISON" level="CRITICAL" enabled="true" />
+        <coding_rule class="IO_APPENDING_TO_OBJECT_OUTPUT_STREAM" level="CRITICAL" enabled="true" />
+        <coding_rule class="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" level="CRITICAL" enabled="true" />
+        <coding_rule class="IS2_INCONSISTENT_SYNC" level="CRITICAL" enabled="true" />
+        <coding_rule class="ISC_INSTANTIATE_STATIC_CLASS" level="MAJOR" enabled="true" />
+        <coding_rule class="IS_FIELD_NOT_GUARDED" level="CRITICAL" enabled="true" />
+        <coding_rule class="ITA_INEFFICIENT_TO_ARRAY" level="CRITICAL" enabled="true" />
+        <coding_rule class="IT_NO_SUCH_ELEMENT" level="MINOR" enabled="true" />
+        <coding_rule class="J2EE_STORE_OF_NON_SERIALIZABLE_OBJECT_INTO_SESSION" level="CRITICAL" enabled="true" />
+        <coding_rule class="JCIP_FIELD_ISNT_FINAL_IN_IMMUTABLE_CLASS" level="MINOR" enabled="true" />
+        <coding_rule class="JLM_JSR166_LOCK_MONITORENTER" level="CRITICAL" enabled="true" />
+        <coding_rule class="JLM_JSR166_UTILCONCURRENT_MONITORENTER" level="CRITICAL" enabled="false" />
+        <coding_rule class="JML_JSR166_CALLING_WAIT_RATHER_THAN_AWAIT" level="CRITICAL" enabled="false" />
+        <coding_rule class="LG_LOST_LOGGER_DUE_TO_WEAK_REFERENCE" level="MAJOR" enabled="false" />
+        <coding_rule class="LI_LAZY_INIT_STATIC" level="CRITICAL" enabled="true" />
+        <coding_rule class="LI_LAZY_INIT_UPDATE_STATIC" level="CRITICAL" enabled="true" />
+        <coding_rule class="ME_ENUM_FIELD_SETTER" level="MAJOR" enabled="false" />
+        <coding_rule class="ME_MUTABLE_ENUM_FIELD" level="MAJOR" enabled="false" />
+        <coding_rule class="MF_CLASS_MASKS_FIELD" level="MAJOR" enabled="true" />
+        <coding_rule class="MF_METHOD_MASKS_FIELD" level="MAJOR" enabled="true" />
+        <coding_rule class="ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD" level="MAJOR" enabled="true" />
+        <coding_rule class="ML_SYNC_ON_UPDATED_FIELD" level="MAJOR" enabled="true" />
+        <coding_rule class="MSF_MUTABLE_SERVLET_FIELD" level="MAJOR" enabled="true" />
+        <coding_rule class="MS_CANNOT_BE_FINAL" level="MAJOR" enabled="true" />
+        <coding_rule class="MS_EXPOSE_REP" level="CRITICAL" enabled="true" />
+        <coding_rule class="MS_FINAL_PKGPROTECT" level="MAJOR" enabled="true" />
+        <coding_rule class="MS_MUTABLE_ARRAY" level="MAJOR" enabled="true" />
+        <coding_rule class="MS_MUTABLE_COLLECTION" level="MAJOR" enabled="false" />
+        <coding_rule class="MS_MUTABLE_COLLECTION_PKGPROTECT" level="MAJOR" enabled="false" />
+        <coding_rule class="MS_MUTABLE_HASHTABLE" level="MAJOR" enabled="true" />
+        <coding_rule class="MS_OOI_PKGPROTECT" level="MAJOR" enabled="true" />
+        <coding_rule class="MS_PKGPROTECT" level="MAJOR" enabled="true" />
+        <coding_rule class="MS_SHOULD_BE_FINAL" level="MAJOR" enabled="true" />
+        <coding_rule class="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL" level="CRITICAL" enabled="false" />
+        <coding_rule class="MTIA_SUSPECT_SERVLET_INSTANCE_FIELD" level="CRITICAL" enabled="true" />
+        <coding_rule class="MTIA_SUSPECT_STRUTS_INSTANCE_FIELD" level="CRITICAL" enabled="true" />
+        <coding_rule class="MWN_MISMATCHED_NOTIFY" level="CRITICAL" enabled="true" />
+        <coding_rule class="MWN_MISMATCHED_WAIT" level="CRITICAL" enabled="true" />
+        <coding_rule class="NM_BAD_EQUAL" level="MAJOR" enabled="false" />
+        <coding_rule class="NM_CLASS_NAMING_CONVENTION" level="MAJOR" enabled="false" />
+        <coding_rule class="NM_CLASS_NOT_EXCEPTION" level="MAJOR" enabled="true" />
+        <coding_rule class="NM_CONFUSING" level="MAJOR" enabled="true" />
+        <coding_rule class="NM_FIELD_NAMING_CONVENTION" level="MAJOR" enabled="false" />
+        <coding_rule class="NM_FUTURE_KEYWORD_USED_AS_IDENTIFIER" level="MAJOR" enabled="true" />
+        <coding_rule class="NM_FUTURE_KEYWORD_USED_AS_MEMBER_IDENTIFIER" level="MAJOR" enabled="true" />
+        <coding_rule class="NM_LCASE_HASHCODE" level="MAJOR" enabled="false" />
+        <coding_rule class="NM_LCASE_TOSTRING" level="MAJOR" enabled="false" />
+        <coding_rule class="NM_METHOD_CONSTRUCTOR_CONFUSION" level="MAJOR" enabled="true" />
+        <coding_rule class="NM_METHOD_NAMING_CONVENTION" level="MAJOR" enabled="false" />
+        <coding_rule class="NM_SAME_SIMPLE_NAME_AS_INTERFACE" level="MAJOR" enabled="true" />
+        <coding_rule class="NM_SAME_SIMPLE_NAME_AS_SUPERCLASS" level="MAJOR" enabled="true" />
+        <coding_rule class="NM_VERY_CONFUSING" level="MAJOR" enabled="true" />
+        <coding_rule class="NM_VERY_CONFUSING_INTENTIONAL" level="MAJOR" enabled="true" />
+        <coding_rule class="NM_WRONG_PACKAGE" level="MAJOR" enabled="true" />
+        <coding_rule class="NM_WRONG_PACKAGE_INTENTIONAL" level="MAJOR" enabled="true" />
+        <coding_rule class="NN_NAKED_NOTIFY" level="CRITICAL" enabled="true" />
+        <coding_rule class="NOISE_FIELD_REFERENCE" level="MAJOR" enabled="false" />
+        <coding_rule class="NOISE_METHOD_CALL" level="MAJOR" enabled="false" />
+        <coding_rule class="NOISE_NULL_DEREFERENCE" level="MAJOR" enabled="false" />
+        <coding_rule class="NOISE_OPERATION" level="MAJOR" enabled="false" />
+        <coding_rule class="NO_NOTIFY_NOT_NOTIFYALL" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_ALWAYS_NULL" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_ALWAYS_NULL_EXCEPTION" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_ARGUMENT_MIGHT_BE_NULL" level="MAJOR" enabled="true" />
+        <coding_rule class="NP_BOOLEAN_RETURN_NULL" level="MAJOR" enabled="true" />
+        <coding_rule class="NP_CLONE_COULD_RETURN_NULL" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_CLOSING_NULL" level="MAJOR" enabled="false" />
+        <coding_rule class="NP_DEREFERENCE_OF_READLINE_VALUE" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_GUARANTEED_DEREF" level="BLOCKER" enabled="true" />
+        <coding_rule class="NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_IMMEDIATE_DEREFERENCE_OF_READLINE" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_LOAD_OF_KNOWN_NULL_VALUE" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_METHOD_PARAMETER_TIGHTENS_ANNOTATION" level="MAJOR" enabled="false" />
+        <coding_rule class="NP_METHOD_RETURN_RELAXING_ANNOTATION" level="MAJOR" enabled="false" />
+        <coding_rule class="NP_NONNULL_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" level="CRITICAL" enabled="false" />
+        <coding_rule class="NP_NONNULL_PARAM_VIOLATION" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_NONNULL_RETURN_VIOLATION" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_NULL_INSTANCEOF" level="BLOCKER" enabled="true" />
+        <coding_rule class="NP_NULL_ON_SOME_PATH" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_NULL_ON_SOME_PATH_EXCEPTION" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_NULL_ON_SOME_PATH_MIGHT_BE_INFEASIBLE" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_NULL_PARAM_DEREF" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_NULL_PARAM_DEREF_ALL_TARGETS_DANGEROUS" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_NULL_PARAM_DEREF_NONVIRTUAL" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_OPTIONAL_RETURN_NULL" level="MAJOR" enabled="false" />
+        <coding_rule class="NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_STORE_INTO_NONNULL_FIELD" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_SYNC_AND_NULL_CHECK_FIELD" level="MAJOR" enabled="true" />
+        <coding_rule class="NP_TOSTRING_COULD_RETURN_NULL" level="CRITICAL" enabled="true" />
+        <coding_rule class="NP_UNWRITTEN_FIELD" level="MAJOR" enabled="false" />
+        <coding_rule class="NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" level="CRITICAL" enabled="false" />
+        <coding_rule class="NS_DANGEROUS_NON_SHORT_CIRCUIT" level="CRITICAL" enabled="true" />
+        <coding_rule class="NS_NON_SHORT_CIRCUIT" level="MAJOR" enabled="true" />
+        <coding_rule class="OBL_UNSATISFIED_OBLIGATION" level="CRITICAL" enabled="false" />
+        <coding_rule class="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" level="CRITICAL" enabled="false" />
+        <coding_rule class="ODR_OPEN_DATABASE_RESOURCE" level="CRITICAL" enabled="true" />
+        <coding_rule class="ODR_OPEN_DATABASE_RESOURCE_EXCEPTION_PATH" level="CRITICAL" enabled="true" />
+        <coding_rule class="OS_OPEN_STREAM" level="CRITICAL" enabled="true" />
+        <coding_rule class="OS_OPEN_STREAM_EXCEPTION_PATH" level="CRITICAL" enabled="true" />
+        <coding_rule class="PS_PUBLIC_SEMAPHORES" level="CRITICAL" enabled="true" />
+        <coding_rule class="PT_ABSOLUTE_PATH_TRAVERSAL" level="CRITICAL" enabled="false" />
+        <coding_rule class="PT_RELATIVE_PATH_TRAVERSAL" level="CRITICAL" enabled="false" />
+        <coding_rule class="PZLA_PREFER_ZERO_LENGTH_ARRAYS" level="MAJOR" enabled="true" />
+        <coding_rule class="PZ_DONT_REUSE_ENTRY_OBJECTS_IN_ITERATORS" level="CRITICAL" enabled="false" />
+        <coding_rule class="QBA_QUESTIONABLE_BOOLEAN_ASSIGNMENT" level="CRITICAL" enabled="true" />
+        <coding_rule class="QF_QUESTIONABLE_FOR_LOOP" level="CRITICAL" enabled="true" />
+        <coding_rule class="RANGE_ARRAY_INDEX" level="MAJOR" enabled="false" />
+        <coding_rule class="RANGE_ARRAY_LENGTH" level="MAJOR" enabled="false" />
+        <coding_rule class="RANGE_ARRAY_OFFSET" level="MAJOR" enabled="false" />
+        <coding_rule class="RANGE_STRING_INDEX" level="MAJOR" enabled="false" />
+        <coding_rule class="RCN_REDUNDANT_COMPARISON_OF_NULL_AND_NONNULL_VALUE" level="CRITICAL" enabled="true" />
+        <coding_rule class="RCN_REDUNDANT_COMPARISON_TWO_NULL_VALUES" level="CRITICAL" enabled="true" />
+        <coding_rule class="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" level="CRITICAL" enabled="true" />
+        <coding_rule class="RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE" level="CRITICAL" enabled="true" />
+        <coding_rule class="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" level="CRITICAL" enabled="true" />
+        <coding_rule class="RC_REF_COMPARISON" level="CRITICAL" enabled="true" />
+        <coding_rule class="RC_REF_COMPARISON_BAD_PRACTICE" level="MAJOR" enabled="false" />
+        <coding_rule class="RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN" level="MAJOR" enabled="false" />
+        <coding_rule class="REC_CATCH_EXCEPTION" level="MAJOR" enabled="true" />
+        <coding_rule class="RE_BAD_SYNTAX_FOR_REGULAR_EXPRESSION" level="CRITICAL" enabled="true" />
+        <coding_rule class="RE_CANT_USE_FILE_SEPARATOR_AS_REGULAR_EXPRESSION" level="CRITICAL" enabled="true" />
+        <coding_rule class="RE_POSSIBLE_UNINTENDED_PATTERN" level="CRITICAL" enabled="true" />
+        <coding_rule class="RI_REDUNDANT_INTERFACES" level="MAJOR" enabled="true" />
+        <coding_rule class="RR_NOT_CHECKED" level="MAJOR" enabled="true" />
+        <coding_rule class="RS_READOBJECT_SYNC" level="CRITICAL" enabled="true" />
+        <coding_rule class="RU_INVOKE_RUN" level="MAJOR" enabled="true" />
+        <coding_rule class="RV_01_TO_INT" level="MAJOR" enabled="true" />
+        <coding_rule class="RV_ABSOLUTE_VALUE_OF_HASHCODE" level="CRITICAL" enabled="true" />
+        <coding_rule class="RV_ABSOLUTE_VALUE_OF_RANDOM_INT" level="CRITICAL" enabled="true" />
+        <coding_rule class="RV_CHECK_COMPARETO_FOR_SPECIFIC_RETURN_VALUE" level="CRITICAL" enabled="false" />
+        <coding_rule class="RV_CHECK_FOR_POSITIVE_INDEXOF" level="MINOR" enabled="true" />
+        <coding_rule class="RV_DONT_JUST_NULL_CHECK_READLINE" level="MAJOR" enabled="true" />
+        <coding_rule class="RV_EXCEPTION_NOT_THROWN" level="CRITICAL" enabled="true" />
+        <coding_rule class="RV_NEGATING_RESULT_OF_COMPARETO" level="CRITICAL" enabled="false" />
+        <coding_rule class="RV_REM_OF_HASHCODE" level="CRITICAL" enabled="true" />
+        <coding_rule class="RV_REM_OF_RANDOM_INT" level="CRITICAL" enabled="true" />
+        <coding_rule class="RV_RETURN_VALUE_IGNORED" level="MINOR" enabled="true" />
+        <coding_rule class="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" level="MAJOR" enabled="true" />
+        <coding_rule class="RV_RETURN_VALUE_IGNORED_INFERRED" level="CRITICAL" enabled="false" />
+        <coding_rule class="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" level="MAJOR" enabled="false" />
+        <coding_rule class="RV_RETURN_VALUE_OF_PUTIFABSENT_IGNORED" level="MAJOR" enabled="false" />
+        <coding_rule class="RpC_REPEATED_CONDITIONAL_TEST" level="MAJOR" enabled="true" />
+        <coding_rule class="SA_FIELD_DOUBLE_ASSIGNMENT" level="CRITICAL" enabled="true" />
+        <coding_rule class="SA_FIELD_SELF_ASSIGNMENT" level="CRITICAL" enabled="true" />
+        <coding_rule class="SA_FIELD_SELF_COMPARISON" level="CRITICAL" enabled="true" />
+        <coding_rule class="SA_FIELD_SELF_COMPUTATION" level="CRITICAL" enabled="true" />
+        <coding_rule class="SA_LOCAL_DOUBLE_ASSIGNMENT" level="CRITICAL" enabled="true" />
+        <coding_rule class="SA_LOCAL_SELF_ASSIGNMENT" level="CRITICAL" enabled="true" />
+        <coding_rule class="SA_LOCAL_SELF_ASSIGNMENT_INSTEAD_OF_FIELD" level="CRITICAL" enabled="false" />
+        <coding_rule class="SA_LOCAL_SELF_COMPARISON" level="CRITICAL" enabled="true" />
+        <coding_rule class="SA_LOCAL_SELF_COMPUTATION" level="CRITICAL" enabled="true" />
+        <coding_rule class="SBSC_USE_STRINGBUFFER_CONCATENATION" level="CRITICAL" enabled="true" />
+        <coding_rule class="SC_START_IN_CTOR" level="CRITICAL" enabled="true" />
+        <coding_rule class="SE_BAD_FIELD" level="MINOR" enabled="false" />
+        <coding_rule class="SE_BAD_FIELD_INNER_CLASS" level="MINOR" enabled="true" />
+        <coding_rule class="SE_BAD_FIELD_STORE" level="CRITICAL" enabled="true" />
+        <coding_rule class="SE_COMPARATOR_SHOULD_BE_SERIALIZABLE" level="MAJOR" enabled="true" />
+        <coding_rule class="SE_INNER_CLASS" level="MAJOR" enabled="true" />
+        <coding_rule class="SE_METHOD_MUST_BE_PRIVATE" level="MAJOR" enabled="true" />
+        <coding_rule class="SE_NONFINAL_SERIALVERSIONID" level="CRITICAL" enabled="true" />
+        <coding_rule class="SE_NONLONG_SERIALVERSIONID" level="MAJOR" enabled="true" />
+        <coding_rule class="SE_NONSTATIC_SERIALVERSIONID" level="MAJOR" enabled="true" />
+        <coding_rule class="SE_NO_SERIALVERSIONID" level="MAJOR" enabled="true" />
+        <coding_rule class="SE_NO_SUITABLE_CONSTRUCTOR" level="MAJOR" enabled="true" />
+        <coding_rule class="SE_NO_SUITABLE_CONSTRUCTOR_FOR_EXTERNALIZATION" level="MAJOR" enabled="true" />
+        <coding_rule class="SE_PRIVATE_READ_RESOLVE_NOT_INHERITED" level="MAJOR" enabled="true" />
+        <coding_rule class="SE_READ_RESOLVE_IS_STATIC" level="MAJOR" enabled="true" />
+        <coding_rule class="SE_READ_RESOLVE_MUST_RETURN_OBJECT" level="MAJOR" enabled="true" />
+        <coding_rule class="SE_TRANSIENT_FIELD_NOT_RESTORED" level="MAJOR" enabled="true" />
+        <coding_rule class="SE_TRANSIENT_FIELD_OF_NONSERIALIZABLE_CLASS" level="MAJOR" enabled="true" />
+        <coding_rule class="SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH" level="MAJOR" enabled="false" />
+        <coding_rule class="SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH_TO_THROW" level="MAJOR" enabled="false" />
+        <coding_rule class="SF_SWITCH_FALLTHROUGH" level="MAJOR" enabled="false" />
+        <coding_rule class="SF_SWITCH_NO_DEFAULT" level="MAJOR" enabled="false" />
+        <coding_rule class="SIC_INNER_SHOULD_BE_STATIC" level="MAJOR" enabled="true" />
+        <coding_rule class="SIC_INNER_SHOULD_BE_STATIC_ANON" level="MAJOR" enabled="true" />
+        <coding_rule class="SIC_INNER_SHOULD_BE_STATIC_NEEDS_THIS" level="MAJOR" enabled="true" />
+        <coding_rule class="SIC_THREADLOCAL_DEADLY_EMBRACE" level="MAJOR" enabled="false" />
+        <coding_rule class="SIO_SUPERFLUOUS_INSTANCEOF" level="CRITICAL" enabled="true" />
+        <coding_rule class="SI_INSTANCE_BEFORE_FINALS_ASSIGNED" level="CRITICAL" enabled="true" />
+        <coding_rule class="SP_SPIN_ON_FIELD" level="MAJOR" enabled="true" />
+        <coding_rule class="SQL_BAD_PREPARED_STATEMENT_ACCESS" level="CRITICAL" enabled="true" />
+        <coding_rule class="SQL_BAD_RESULTSET_ACCESS" level="CRITICAL" enabled="true" />
+        <coding_rule class="SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE" level="CRITICAL" enabled="true" />
+        <coding_rule class="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" level="CRITICAL" enabled="true" />
+        <coding_rule class="SR_NOT_CHECKED" level="MAJOR" enabled="true" />
+        <coding_rule class="SS_SHOULD_BE_STATIC" level="MAJOR" enabled="true" />
+        <coding_rule class="STCAL_INVOKE_ON_STATIC_CALENDAR_INSTANCE" level="CRITICAL" enabled="true" />
+        <coding_rule class="STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE" level="CRITICAL" enabled="true" />
+        <coding_rule class="STCAL_STATIC_CALENDAR_INSTANCE" level="CRITICAL" enabled="true" />
+        <coding_rule class="STCAL_STATIC_SIMPLE_DATE_FORMAT_INSTANCE" level="CRITICAL" enabled="true" />
+        <coding_rule class="STI_INTERRUPTED_ON_CURRENTTHREAD" level="CRITICAL" enabled="true" />
+        <coding_rule class="STI_INTERRUPTED_ON_UNKNOWNTHREAD" level="CRITICAL" enabled="true" />
+        <coding_rule class="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" level="CRITICAL" enabled="true" />
+        <coding_rule class="SWL_SLEEP_WITH_LOCK_HELD" level="CRITICAL" enabled="true" />
+        <coding_rule class="SW_SWING_METHODS_INVOKED_IN_SWING_THREAD" level="MAJOR" enabled="true" />
+        <coding_rule class="TLW_TWO_LOCK_WAIT" level="MAJOR" enabled="true" />
+        <coding_rule class="TQ_ALWAYS_VALUE_USED_WHERE_NEVER_REQUIRED" level="CRITICAL" enabled="true" />
+        <coding_rule class="TQ_COMPARING_VALUES_WITH_INCOMPATIBLE_TYPE_QUALIFIERS" level="CRITICAL" enabled="false" />
+        <coding_rule class="TQ_EXPLICIT_UNKNOWN_SOURCE_VALUE_REACHES_ALWAYS_SINK" level="CRITICAL" enabled="true" />
+        <coding_rule class="TQ_EXPLICIT_UNKNOWN_SOURCE_VALUE_REACHES_NEVER_SINK" level="CRITICAL" enabled="true" />
+        <coding_rule class="TQ_MAYBE_SOURCE_VALUE_REACHES_ALWAYS_SINK" level="CRITICAL" enabled="true" />
+        <coding_rule class="TQ_MAYBE_SOURCE_VALUE_REACHES_NEVER_SINK" level="CRITICAL" enabled="true" />
+        <coding_rule class="TQ_NEVER_VALUE_USED_WHERE_ALWAYS_REQUIRED" level="CRITICAL" enabled="true" />
+        <coding_rule class="TQ_UNKNOWN_VALUE_USED_WHERE_ALWAYS_STRICTLY_REQUIRED" level="CRITICAL" enabled="false" />
+        <coding_rule class="UCF_USELESS_CONTROL_FLOW" level="CRITICAL" enabled="true" />
+        <coding_rule class="UCF_USELESS_CONTROL_FLOW_NEXT_LINE" level="CRITICAL" enabled="true" />
+        <coding_rule class="UC_USELESS_CONDITION" level="MAJOR" enabled="false" />
+        <coding_rule class="UC_USELESS_CONDITION_TYPE" level="MAJOR" enabled="false" />
+        <coding_rule class="UC_USELESS_OBJECT" level="MAJOR" enabled="false" />
+        <coding_rule class="UC_USELESS_OBJECT_STACK" level="MAJOR" enabled="false" />
+        <coding_rule class="UC_USELESS_VOID_METHOD" level="MAJOR" enabled="false" />
+        <coding_rule class="UG_SYNC_SET_UNSYNC_GET" level="MAJOR" enabled="true" />
+        <coding_rule class="UI_INHERITANCE_UNSAFE_GETRESOURCE" level="MAJOR" enabled="true" />
+        <coding_rule class="UL_UNRELEASED_LOCK" level="CRITICAL" enabled="true" />
+        <coding_rule class="UL_UNRELEASED_LOCK_EXCEPTION_PATH" level="CRITICAL" enabled="true" />
+        <coding_rule class="UMAC_UNCALLABLE_METHOD_OF_ANONYMOUS_CLASS" level="CRITICAL" enabled="true" />
+        <coding_rule class="UM_UNNECESSARY_MATH" level="CRITICAL" enabled="true" />
+        <coding_rule class="UPM_UNCALLED_PRIVATE_METHOD" level="CRITICAL" enabled="true" />
+        <coding_rule class="URF_UNREAD_FIELD" level="MAJOR" enabled="true" />
+        <coding_rule class="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" level="CRITICAL" enabled="false" />
+        <coding_rule class="UR_UNINIT_READ" level="MAJOR" enabled="true" />
+        <coding_rule class="UR_UNINIT_READ_CALLED_FROM_SUPER_CONSTRUCTOR" level="MAJOR" enabled="false" />
+        <coding_rule class="USM_USELESS_ABSTRACT_METHOD" level="MAJOR" enabled="false" />
+        <coding_rule class="USM_USELESS_SUBCLASS_METHOD" level="MAJOR" enabled="false" />
+        <coding_rule class="UUF_UNUSED_FIELD" level="MAJOR" enabled="true" />
+        <coding_rule class="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" level="CRITICAL" enabled="false" />
+        <coding_rule class="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" level="MAJOR" enabled="false" />
+        <coding_rule class="UWF_NULL_FIELD" level="CRITICAL" enabled="true" />
+        <coding_rule class="UWF_UNWRITTEN_FIELD" level="MAJOR" enabled="false" />
+        <coding_rule class="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" level="CRITICAL" enabled="false" />
+        <coding_rule class="UW_UNCOND_WAIT" level="MAJOR" enabled="true" />
+        <coding_rule class="VA_FORMAT_STRING_BAD_ARGUMENT" level="CRITICAL" enabled="true" />
+        <coding_rule class="VA_FORMAT_STRING_BAD_CONVERSION" level="CRITICAL" enabled="true" />
+        <coding_rule class="VA_FORMAT_STRING_BAD_CONVERSION_FROM_ARRAY" level="MAJOR" enabled="true" />
+        <coding_rule class="VA_FORMAT_STRING_BAD_CONVERSION_TO_BOOLEAN" level="MAJOR" enabled="true" />
+        <coding_rule class="VA_FORMAT_STRING_EXPECTED_MESSAGE_FORMAT_SUPPLIED" level="MAJOR" enabled="false" />
+        <coding_rule class="VA_FORMAT_STRING_EXTRA_ARGUMENTS_PASSED" level="MAJOR" enabled="true" />
+        <coding_rule class="VA_FORMAT_STRING_ILLEGAL" level="CRITICAL" enabled="true" />
+        <coding_rule class="VA_FORMAT_STRING_MISSING_ARGUMENT" level="CRITICAL" enabled="true" />
+        <coding_rule class="VA_FORMAT_STRING_NO_PREVIOUS_ARGUMENT" level="CRITICAL" enabled="true" />
+        <coding_rule class="VA_FORMAT_STRING_USES_NEWLINE" level="CRITICAL" enabled="false" />
+        <coding_rule class="VA_PRIMITIVE_ARRAY_PASSED_TO_OBJECT_VARARG" level="CRITICAL" enabled="true" />
+        <coding_rule class="VO_VOLATILE_INCREMENT" level="CRITICAL" enabled="false" />
+        <coding_rule class="VO_VOLATILE_REFERENCE_TO_ARRAY" level="MAJOR" enabled="true" />
+        <coding_rule class="VR_UNRESOLVABLE_REFERENCE" level="MAJOR" enabled="false" />
+        <coding_rule class="WA_AWAIT_NOT_IN_LOOP" level="CRITICAL" enabled="true" />
+        <coding_rule class="WA_NOT_IN_LOOP" level="CRITICAL" enabled="true" />
+        <coding_rule class="WL_USING_GETCLASS_RATHER_THAN_CLASS_LITERAL" level="CRITICAL" enabled="true" />
+        <coding_rule class="WMI_WRONG_MAP_ITERATOR" level="CRITICAL" enabled="true" />
+        <coding_rule class="WS_WRITEOBJECT_SYNC" level="CRITICAL" enabled="true" />
+        <coding_rule class="XFB_XML_FACTORY_BYPASS" level="CRITICAL" enabled="true" />
+        <coding_rule class="XSS_REQUEST_PARAMETER_TO_JSP_WRITER" level="CRITICAL" enabled="true" />
+        <coding_rule class="XSS_REQUEST_PARAMETER_TO_SEND_ERROR" level="CRITICAL" enabled="true" />
+        <coding_rule class="XSS_REQUEST_PARAMETER_TO_SERVLET_WRITER" level="CRITICAL" enabled="true" />
+      </profile>
+    </profiles>
+    <list size="0" />
+  </component>
+  <component name="CheckStyle-IDEA" serialisationVersion="2">
+    <checkstyleVersion>10.3.2</checkstyleVersion>
+    <scanScope>JavaOnly</scanScope>
+    <copyLibs>true</copyLibs>
+    <option name="thirdPartyClasspath" />
+    <option name="activeLocationIds" />
+    <option name="locations">
+      <list>
+        <ConfigurationLocation id="bundled-sun-checks" type="BUNDLED" scope="All" description="Sun Checks">(bundled)</ConfigurationLocation>
+        <ConfigurationLocation id="bundled-google-checks" type="BUNDLED" scope="All" description="Google Checks">(bundled)</ConfigurationLocation>
+      </list>
+    </option>
+  </component>
+  <component name="CodeStyleManager">
+    <option name="USE_DEFAULT_CODE_STYLE_SCHEME" value="true" />
+    <option name="CODE_STYLE_SCHEME" value="" />
+  </component>
+  <component name="CompilerConfiguration">
     <wildcardResourcePatterns>
-      <entry name="${wildcardResourcePattern}"/>
+      <entry name="!?*.java" />
     </wildcardResourcePatterns>
-    -->  
-    <wildcardResourcePatterns>
-      <entry name="!?*.java"/>
-    </wildcardResourcePatterns>
-  </component>  
-  <component name="JavacSettings"> 
-    <option name="DEBUGGING_INFO" value="true"/>  
-    <option name="GENERATE_NO_WARNINGS" value="false"/>  
-    <option name="DEPRECATION" value="true"/>  
-    <option name="ADDITIONAL_OPTIONS_STRING" value=""/>  
-    <option name="MAXIMUM_HEAP_SIZE" value="128"/>  
-    <option name="USE_GENERICS_COMPILER" value="false"/> 
-  </component>  
-  <component name="JikesSettings"> 
-    <option name="DEBUGGING_INFO" value="true"/>  
-    <option name="DEPRECATION" value="true"/>  
-    <option name="GENERATE_NO_WARNINGS" value="false"/>  
-    <option name="GENERATE_MAKE_FILE_DEPENDENCIES" value="false"/>  
-    <option name="DO_FULL_DEPENDENCE_CHECK" value="false"/>  
-    <option name="IS_INCREMENTAL_MODE" value="false"/>  
-    <option name="IS_EMACS_ERRORS_MODE" value="true"/>  
-    <option name="ADDITIONAL_OPTIONS_STRING" value=""/>  
-    <option name="MAXIMUM_HEAP_SIZE" value="128"/> 
-  </component>  
-  <component name="AntConfiguration"> 
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false"/>  
-    <option name="FILTER_TARGETS" value="false"/> 
-  </component>  
-  <component name="JavadocGenerationManager"> 
-    <option name="OUTPUT_DIRECTORY"/>  
-    <option name="OPTION_SCOPE" value="protected"/>  
-    <option name="OPTION_HIERARCHY" value="false"/>  
-    <option name="OPTION_NAVIGATOR" value="false"/>  
-    <option name="OPTION_INDEX" value="false"/>  
-    <option name="OPTION_SEPARATE_INDEX" value="false"/>  
-    <option name="OPTION_USE_1_1" value="false"/>  
-    <option name="OPTION_DOCUMENT_TAG_USE" value="false"/>  
-    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false"/>  
-    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false"/>  
-    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="false"/>  
-    <option name="OPTION_DEPRECATED_LIST" value="false"/>  
-    <option name="OTHER_OPTIONS"/>  
-    <option name="HEAP_SIZE"/>  
-    <option name="OPEN_IN_BROWSER" value="false"/> 
-  </component>  
-  <component name="JUnitProjectSettings"> 
-    <option name="TEST_RUNNER" value="UI"/> 
-  </component>  
-  <component name="EntryPointsManager"> 
-    <entry_points/> 
-  </component>  
-  <component name="DataSourceManager"/>  
-  <component name="ExportToHTMLSettings"> 
-    <option name="PRINT_LINE_NUMBERS" value="false"/>  
-    <option name="OPEN_IN_BROWSER" value="false"/>  
-    <option name="OUTPUT_DIRECTORY"/> 
-  </component>  
-  <component name="ImportConfiguration"> 
-    <option name="VENDOR"/>  
-    <option name="RELEASE_TAG"/>  
-    <option name="LOG_MESSAGE"/>  
-    <option name="CHECKOUT_AFTER_IMPORT" value="true"/> 
-  </component>  
-  <component name="ProjectModuleManager"> 
-    <modules> 
-      <!-- module filepath="$$PROJECT_DIR$$/${pom.artifactId}.iml"/ -->  
-      <module filepath="$PROJECT_DIR$/technology-demo.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-liteflow/demo-liteflow.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-autowired/demo-autowired.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-lambda/demo-lambda.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-common/demo-common.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-consumer/demo-consumer.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-assert/demo-assert.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-linux-application/demo-linux-application.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-function/demo-function.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-docker-application/demo-docker-application.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-netty/demo-netty.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-io/demo-io.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-security/demo-security.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-mapstruct/demo-mapstruct.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-enum/demo-enum.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-flyway/demo-flyway.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-tree/demo-tree.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-adapter/demo-adapter.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-designMode/demo-designMode.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-zeromq/demo-zeromq.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-zookeeper/demo-zookeeper.iml"/>
-      <module filepath="$PROJECT_DIR$/demo-cloud-consumer/demo-cloud-consumer.iml"/>
-    </modules> 
-  </component>  
-  <UsedPathMacros> 
-    <!--<macro name="cargo"></macro>--> 
-  </UsedPathMacros> 
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-flyway" />
+        <module name="demo-cloud-consumer" />
+        <module name="demo-linux-application" />
+        <module name="demo-liteflow" />
+        <module name="demo-enum" />
+        <module name="demo-mapstruct" />
+        <module name="demo-io" />
+        <module name="demo-consumer" />
+        <module name="demo-assert" />
+        <module name="demo-zookeeper" />
+        <module name="demo-function" />
+        <module name="demo-netty" />
+        <module name="demo-lambda" />
+        <module name="demo-adapter" />
+        <module name="demo-docker-application" />
+        <module name="demo-zeromq" />
+        <module name="demo-common" />
+        <module name="demo-autowired" />
+        <module name="demo-tree" />
+        <module name="demo-security" />
+        <module name="demo-designMode" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo-adapter" target="1.8" />
+      <module name="demo-assert" target="1.8" />
+      <module name="demo-autowired" target="1.8" />
+      <module name="demo-cloud-consumer" target="1.8" />
+      <module name="demo-common" target="1.8" />
+      <module name="demo-consumer" target="1.8" />
+      <module name="demo-designMode" target="1.8" />
+      <module name="demo-docker-application" target="1.8" />
+      <module name="demo-enum" target="1.8" />
+      <module name="demo-flyway" target="1.8" />
+      <module name="demo-function" target="1.8" />
+      <module name="demo-io" target="1.8" />
+      <module name="demo-lambda" target="1.8" />
+      <module name="demo-linux-application" target="1.8" />
+      <module name="demo-liteflow" target="1.8" />
+      <module name="demo-mapstruct" target="1.8" />
+      <module name="demo-netty" target="1.8" />
+      <module name="demo-security" target="1.8" />
+      <module name="demo-tree" target="1.8" />
+      <module name="demo-zeromq" target="1.8" />
+      <module name="demo-zookeeper" target="1.8" />
+      <module name="technology-demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/demo-adapter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-assert/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-autowired/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-cloud-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-designMode/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-docker-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-enum/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-flyway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-function/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-io/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-lambda/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-linux-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-liteflow/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-mapstruct/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-netty/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-tree/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-zeromq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-zookeeper/src/main/java" charset="UTF-8" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="PRINT_LINE_NUMBERS" value="false" />
+    <option name="OPEN_IN_BROWSER" value="false" />
+    <option name="OUTPUT_DIRECTORY" />
+  </component>
+  <component name="FindBugsConfigurable">
+    <option name="make" value="true" />
+    <option name="effort" value="default" />
+    <option name="priority" value="Medium" />
+    <option name="excludeFilter" value="" />
+  </component>
+  <component name="ImportConfiguration">
+    <option name="VENDOR" />
+    <option name="RELEASE_TAG" />
+    <option name="LOG_MESSAGE" />
+    <option name="CHECKOUT_AFTER_IMPORT" value="true" />
+  </component>
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
+    <version value="1.0" />
+  </component>
+  <component name="JUnitProjectSettings">
+    <option name="TEST_RUNNER" value="UI" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo-adapter" options="-parameters" />
+      <module name="demo-assert" options="-parameters" />
+      <module name="demo-autowired" options="-parameters" />
+      <module name="demo-cloud-consumer" options="-parameters" />
+      <module name="demo-common" options="-parameters" />
+      <module name="demo-consumer" options="-parameters" />
+      <module name="demo-designMode" options="-parameters" />
+      <module name="demo-docker-application" options="-parameters" />
+      <module name="demo-enum" options="-parameters" />
+      <module name="demo-flyway" options="-parameters" />
+      <module name="demo-function" options="-parameters" />
+      <module name="demo-io" options="-parameters" />
+      <module name="demo-lambda" options="-parameters" />
+      <module name="demo-linux-application" options="-parameters" />
+      <module name="demo-liteflow" options="-parameters" />
+      <module name="demo-mapstruct" options="-parameters" />
+      <module name="demo-netty" options="-parameters" />
+      <module name="demo-security" options="-parameters" />
+      <module name="demo-tree" options="-parameters" />
+      <module name="demo-zeromq" options="-parameters" />
+      <module name="demo-zookeeper" options="-parameters" />
+    </option>
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OPTION_HIERARCHY" value="false" />
+    <option name="OPTION_NAVIGATOR" value="false" />
+    <option name="OPTION_INDEX" value="false" />
+    <option name="OPTION_SEPARATE_INDEX" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="false" />
+    <option name="OPTION_DEPRECATED_LIST" value="false" />
+    <option name="OPEN_IN_BROWSER" value="false" />
+  </component>
+  <component name="JikesSettings">
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="DEPRECATION" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="false" />
+    <option name="GENERATE_MAKE_FILE_DEPENDENCIES" value="false" />
+    <option name="DO_FULL_DEPENDENCE_CHECK" value="false" />
+    <option name="IS_INCREMENTAL_MODE" value="false" />
+    <option name="IS_EMACS_ERRORS_MODE" value="true" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+    <option name="MAXIMUM_HEAP_SIZE" value="128" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="PDMPlugin">
+    <option name="skipTestSources" value="false" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo-adapter/demo-adapter.iml" filepath="$PROJECT_DIR$/demo-adapter/demo-adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-assert/demo-assert.iml" filepath="$PROJECT_DIR$/demo-assert/demo-assert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-autowired/demo-autowired.iml" filepath="$PROJECT_DIR$/demo-autowired/demo-autowired.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-cloud-consumer/demo-cloud-consumer.iml" filepath="$PROJECT_DIR$/demo-cloud-consumer/demo-cloud-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-common/demo-common.iml" filepath="$PROJECT_DIR$/demo-common/demo-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-consumer/demo-consumer.iml" filepath="$PROJECT_DIR$/demo-consumer/demo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-designMode/demo-designMode.iml" filepath="$PROJECT_DIR$/demo-designMode/demo-designMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-docker-application/demo-docker-application.iml" filepath="$PROJECT_DIR$/demo-docker-application/demo-docker-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-enum/demo-enum.iml" filepath="$PROJECT_DIR$/demo-enum/demo-enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-flyway/demo-flyway.iml" filepath="$PROJECT_DIR$/demo-flyway/demo-flyway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-function/demo-function.iml" filepath="$PROJECT_DIR$/demo-function/demo-function.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-io/demo-io.iml" filepath="$PROJECT_DIR$/demo-io/demo-io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-lambda/demo-lambda.iml" filepath="$PROJECT_DIR$/demo-lambda/demo-lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-linux-application/demo-linux-application.iml" filepath="$PROJECT_DIR$/demo-linux-application/demo-linux-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-liteflow/demo-liteflow.iml" filepath="$PROJECT_DIR$/demo-liteflow/demo-liteflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-mapstruct/demo-mapstruct.iml" filepath="$PROJECT_DIR$/demo-mapstruct/demo-mapstruct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-netty/demo-netty.iml" filepath="$PROJECT_DIR$/demo-netty/demo-netty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-security/demo-security.iml" filepath="$PROJECT_DIR$/demo-security/demo-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-tree/demo-tree.iml" filepath="$PROJECT_DIR$/demo-tree/demo-tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-zeromq/demo-zeromq.iml" filepath="$PROJECT_DIR$/demo-zeromq/demo-zeromq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-zookeeper/demo-zookeeper.iml" filepath="$PROJECT_DIR$/demo-zookeeper/demo-zookeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/technology-demo.iml" filepath="$PROJECT_DIR$/technology-demo.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="zsmart_snapshots" />
+      <option name="name" value="zsmart_snapshots" />
+      <option name="url" value="http://10.45.4.150:8081/nexus/content/repositories/snapshots/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="sonatype-nexus-snapshots" />
+      <option name="name" value="sonatype-nexus-snapshots" />
+      <option name="url" value="https://oss.sonatype.org/content/repositories/snapshots" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://10.10.168.138:8081/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="zsmart_snapshots" />
+      <option name="name" value="zsmart_snapshots" />
+      <option name="url" value="http://10.10.168.138:8081/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="sonatype-nexus-snapshots" />
+      <option name="name" value="sonatype-nexus-snapshots" />
+      <option name="url" value="http://10.10.168.138:8081/nexus/content/repositories/public/" />
+    </remote-repository>
+  </component>
+  <component name="RunConfigurationProducerService">
+    <option name="ignoredProducers">
+      <set>
+        <option value="com.android.tools.idea.compose.preview.runconfiguration.ComposePreviewRunConfigurationProducer" />
+      </set>
+    </option>
+  </component>
+  <component name="SuppressionsComponent">
+    <option name="suppComments" value="[]" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="Maven: aopalliance:aopalliance:1.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/aopalliance/aopalliance/1.0/aopalliance-1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: ch.qos.logback:logback-classic:1.2.3">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: ch.qos.logback:logback-core:1.2.3">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: cn.hutool:hutool-core:5.7.19">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/cn/hutool/hutool-core/5.7.19/hutool-core-5.7.19.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/cn/hutool/hutool-core/5.7.19/hutool-core-5.7.19-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/cn/hutool/hutool-core/5.7.19/hutool-core-5.7.19-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.alibaba:QLExpress:3.3.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/alibaba/QLExpress/3.3.0/QLExpress-3.3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/alibaba/QLExpress/3.3.0/QLExpress-3.3.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/alibaba/QLExpress/3.3.0/QLExpress-3.3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.alibaba:druid:1.0.29">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/alibaba/druid/1.0.29/druid-1.0.29.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/alibaba/druid/1.0.29/druid-1.0.29-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/alibaba/druid/1.0.29/druid-1.0.29-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.alibaba:fastjson:1.2.6">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/alibaba/fastjson/1.2.6/fastjson-1.2.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.alibaba:transmittable-thread-local:2.12.3">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/alibaba/transmittable-thread-local/2.12.3/transmittable-thread-local-2.12.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/alibaba/transmittable-thread-local/2.12.3/transmittable-thread-local-2.12.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/alibaba/transmittable-thread-local/2.12.3/transmittable-thread-local-2.12.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.fasterxml.jackson.core:jackson-core:2.10.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.fasterxml.jackson.core:jackson-databind:2.10.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.3.3">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.3.3/jackson-dataformat-yaml-2.3.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.3.3/jackson-dataformat-yaml-2.3.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.3.3/jackson-dataformat-yaml-2.3.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.0/jackson-datatype-jdk8-2.10.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.0/jackson-datatype-jdk8-2.10.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.0/jackson-datatype-jdk8-2.10.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.0/jackson-datatype-jsr310-2.10.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.0/jackson-datatype-jsr310-2.10.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.0/jackson-datatype-jsr310-2.10.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.10.0/jackson-module-parameter-names-2.10.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.10.0/jackson-module-parameter-names-2.10.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.10.0/jackson-module-parameter-names-2.10.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.fasterxml:classmate:1.5.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/classmate/1.5.0/classmate-1.5.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/classmate/1.5.0/classmate-1.5.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/classmate/1.5.0/classmate-1.5.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.github.jsqlparser:jsqlparser:1.4">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/github/jsqlparser/jsqlparser/1.4/jsqlparser-1.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/github/jsqlparser/jsqlparser/1.4/jsqlparser-1.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/github/jsqlparser/jsqlparser/1.4/jsqlparser-1.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.google.code.findbugs:jsr305:3.0.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.google.guava:guava:16.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/google/guava/guava/16.0/guava-16.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/google/guava/guava/16.0/guava-16.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/google/guava/guava/16.0/guava-16.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.jayway.jsonpath:json-path:2.4.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.archaius:archaius-core:0.7.6">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/archaius/archaius-core/0.7.6/archaius-core-0.7.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/archaius/archaius-core/0.7.6/archaius-core-0.7.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/archaius/archaius-core/0.7.6/archaius-core-0.7.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.hystrix:hystrix-core:1.5.18">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.netflix-commons:netflix-commons-util:0.1.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/netflix-commons/netflix-commons-util/0.1.1/netflix-commons-util-0.1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/netflix-commons/netflix-commons-util/0.1.1/netflix-commons-util-0.1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/netflix-commons/netflix-commons-util/0.1.1/netflix-commons-util-0.1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.netflix-commons:netflix-statistics:0.1.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/netflix-commons/netflix-statistics/0.1.1/netflix-statistics-0.1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/netflix-commons/netflix-statistics/0.1.1/netflix-statistics-0.1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/netflix-commons/netflix-statistics/0.1.1/netflix-statistics-0.1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.ribbon:ribbon-core:2.3.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon-core/2.3.0/ribbon-core-2.3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon-core/2.3.0/ribbon-core-2.3.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon-core/2.3.0/ribbon-core-2.3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.ribbon:ribbon-httpclient:2.3.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon-httpclient/2.3.0/ribbon-httpclient-2.3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon-httpclient/2.3.0/ribbon-httpclient-2.3.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon-httpclient/2.3.0/ribbon-httpclient-2.3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.ribbon:ribbon-loadbalancer:2.3.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon-loadbalancer/2.3.0/ribbon-loadbalancer-2.3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon-loadbalancer/2.3.0/ribbon-loadbalancer-2.3.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon-loadbalancer/2.3.0/ribbon-loadbalancer-2.3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.ribbon:ribbon-transport:2.3.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon-transport/2.3.0/ribbon-transport-2.3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon-transport/2.3.0/ribbon-transport-2.3.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon-transport/2.3.0/ribbon-transport-2.3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.ribbon:ribbon:2.3.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon/2.3.0/ribbon-2.3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon/2.3.0/ribbon-2.3.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/ribbon/ribbon/2.3.0/ribbon-2.3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.servo:servo-core:0.10.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/servo/servo-core/0.10.1/servo-core-0.10.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/servo/servo-core/0.10.1/servo-core-0.10.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/servo/servo-core/0.10.1/servo-core-0.10.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.servo:servo-internal:0.10.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/servo/servo-internal/0.10.1/servo-internal-0.10.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/servo/servo-internal/0.10.1/servo-internal-0.10.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/servo/servo-internal/0.10.1/servo-internal-0.10.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.sun.jersey.contribs:jersey-apache-client4:1.19.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.sun.jersey:jersey-client:1.19.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/sun/jersey/jersey-client/1.19.1/jersey-client-1.19.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/sun/jersey/jersey-client/1.19.1/jersey-client-1.19.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/sun/jersey/jersey-client/1.19.1/jersey-client-1.19.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.sun.jersey:jersey-core:1.19.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/sun/jersey/jersey-core/1.19.1/jersey-core-1.19.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/sun/jersey/jersey-core/1.19.1/jersey-core-1.19.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/sun/jersey/jersey-core/1.19.1/jersey-core-1.19.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.vaadin.external.google:android-json:0.0.20131108.vaadin1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.yomahub:liteflow-core:2.8.5">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/yomahub/liteflow-core/2.8.5/liteflow-core-2.8.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/yomahub/liteflow-core/2.8.5/liteflow-core-2.8.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/yomahub/liteflow-core/2.8.5/liteflow-core-2.8.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.yomahub:liteflow-script-common:2.8.5">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/yomahub/liteflow-script-common/2.8.5/liteflow-script-common-2.8.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/yomahub/liteflow-script-common/2.8.5/liteflow-script-common-2.8.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/yomahub/liteflow-script-common/2.8.5/liteflow-script-common-2.8.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.yomahub:liteflow-spring-boot-starter:2.8.5">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/yomahub/liteflow-spring-boot-starter/2.8.5/liteflow-spring-boot-starter-2.8.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/yomahub/liteflow-spring-boot-starter/2.8.5/liteflow-spring-boot-starter-2.8.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/yomahub/liteflow-spring-boot-starter/2.8.5/liteflow-spring-boot-starter-2.8.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.yomahub:liteflow-spring:2.8.5">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/yomahub/liteflow-spring/2.8.5/liteflow-spring-2.8.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/yomahub/liteflow-spring/2.8.5/liteflow-spring-2.8.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/yomahub/liteflow-spring/2.8.5/liteflow-spring-2.8.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-beanutils:commons-beanutils:1.9.3">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-codec:commons-codec:1.13">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/commons-codec/commons-codec/1.13/commons-codec-1.13-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/commons-codec/commons-codec/1.13/commons-codec-1.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-collections:commons-collections:3.2.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-configuration:commons-configuration:1.8">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/commons-configuration/commons-configuration/1.8/commons-configuration-1.8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/commons-configuration/commons-configuration/1.8/commons-configuration-1.8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/commons-configuration/commons-configuration/1.8/commons-configuration-1.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-fileupload:commons-fileupload:1.4">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/commons-fileupload/commons-fileupload/1.4/commons-fileupload-1.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/commons-fileupload/commons-fileupload/1.4/commons-fileupload-1.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/commons-fileupload/commons-fileupload/1.4/commons-fileupload-1.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-io:commons-io:2.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/commons-io/commons-io/2.2/commons-io-2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/commons-io/commons-io/2.2/commons-io-2.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/commons-io/commons-io/2.2/commons-io-2.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-lang:commons-lang:2.4">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/commons-lang/commons-lang/2.4/commons-lang-2.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/commons-lang/commons-lang/2.4/commons-lang-2.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-lang:commons-lang:2.6">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/commons-lang/commons-lang/2.6/commons-lang-2.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/commons-lang/commons-lang/2.6/commons-lang-2.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-logging:commons-logging:1.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/commons-logging/commons-logging/1.2/commons-logging-1.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: de.siegmar:logback-gelf:1.1.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/de/siegmar/logback-gelf/1.1.0/logback-gelf-1.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/de/siegmar/logback-gelf/1.1.0/logback-gelf-1.1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/de/siegmar/logback-gelf/1.1.0/logback-gelf-1.1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: eu.neilalexander:jnacl:1.0.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/eu/neilalexander/jnacl/1.0.0/jnacl-1.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/eu/neilalexander/jnacl/1.0.0/jnacl-1.0.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/eu/neilalexander/jnacl/1.0.0/jnacl-1.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.github.openfeign.form:feign-form-spring:3.8.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/form/feign-form-spring/3.8.0/feign-form-spring-3.8.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/form/feign-form-spring/3.8.0/feign-form-spring-3.8.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/form/feign-form-spring/3.8.0/feign-form-spring-3.8.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.github.openfeign.form:feign-form:3.8.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/form/feign-form/3.8.0/feign-form-3.8.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/form/feign-form/3.8.0/feign-form-3.8.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/form/feign-form/3.8.0/feign-form-3.8.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.github.openfeign:feign-core:10.4.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/feign-core/10.4.0/feign-core-10.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/feign-core/10.4.0/feign-core-10.4.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/feign-core/10.4.0/feign-core-10.4.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.github.openfeign:feign-hystrix:10.4.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/feign-hystrix/10.4.0/feign-hystrix-10.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/feign-hystrix/10.4.0/feign-hystrix-10.4.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/feign-hystrix/10.4.0/feign-hystrix-10.4.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.github.openfeign:feign-slf4j:10.4.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/feign-slf4j/10.4.0/feign-slf4j-10.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/feign-slf4j/10.4.0/feign-slf4j-10.4.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/github/openfeign/feign-slf4j/10.4.0/feign-slf4j-10.4.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.netty:netty-all:4.1.39.Final">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.netty:netty-buffer:4.1.42.Final">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-buffer/4.1.42.Final/netty-buffer-4.1.42.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-buffer/4.1.42.Final/netty-buffer-4.1.42.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-buffer/4.1.42.Final/netty-buffer-4.1.42.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.netty:netty-codec:4.1.42.Final">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-codec/4.1.42.Final/netty-codec-4.1.42.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-codec/4.1.42.Final/netty-codec-4.1.42.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-codec/4.1.42.Final/netty-codec-4.1.42.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.netty:netty-common:4.1.42.Final">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-common/4.1.42.Final/netty-common-4.1.42.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-common/4.1.42.Final/netty-common-4.1.42.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-common/4.1.42.Final/netty-common-4.1.42.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.netty:netty-handler:4.1.42.Final">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-handler/4.1.42.Final/netty-handler-4.1.42.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-handler/4.1.42.Final/netty-handler-4.1.42.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-handler/4.1.42.Final/netty-handler-4.1.42.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.netty:netty-resolver:4.1.42.Final">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-resolver/4.1.42.Final/netty-resolver-4.1.42.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-resolver/4.1.42.Final/netty-resolver-4.1.42.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-resolver/4.1.42.Final/netty-resolver-4.1.42.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.netty:netty-transport-native-epoll:4.1.42.Final">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-transport-native-epoll/4.1.42.Final/netty-transport-native-epoll-4.1.42.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-transport-native-epoll/4.1.42.Final/netty-transport-native-epoll-4.1.42.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-transport-native-epoll/4.1.42.Final/netty-transport-native-epoll-4.1.42.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.netty:netty-transport-native-unix-common:4.1.42.Final">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-transport-native-unix-common/4.1.42.Final/netty-transport-native-unix-common-4.1.42.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-transport-native-unix-common/4.1.42.Final/netty-transport-native-unix-common-4.1.42.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-transport-native-unix-common/4.1.42.Final/netty-transport-native-unix-common-4.1.42.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.netty:netty-transport:4.1.42.Final">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-transport/4.1.42.Final/netty-transport-4.1.42.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-transport/4.1.42.Final/netty-transport-4.1.42.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/netty/netty-transport/4.1.42.Final/netty-transport-4.1.42.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.reactivex:rxjava:1.3.8">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxjava/1.3.8/rxjava-1.3.8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxjava/1.3.8/rxjava-1.3.8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxjava/1.3.8/rxjava-1.3.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.reactivex:rxnetty-contexts:0.4.9">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxnetty-contexts/0.4.9/rxnetty-contexts-0.4.9.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxnetty-contexts/0.4.9/rxnetty-contexts-0.4.9-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxnetty-contexts/0.4.9/rxnetty-contexts-0.4.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.reactivex:rxnetty-servo:0.4.9">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxnetty-servo/0.4.9/rxnetty-servo-0.4.9.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxnetty-servo/0.4.9/rxnetty-servo-0.4.9-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxnetty-servo/0.4.9/rxnetty-servo-0.4.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.reactivex:rxnetty:0.4.9">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxnetty/0.4.9/rxnetty-0.4.9.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxnetty/0.4.9/rxnetty-0.4.9-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxnetty/0.4.9/rxnetty-0.4.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jakarta.activation:jakarta.activation-api:1.2.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jakarta.annotation:jakarta.annotation-api:1.3.5">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jakarta.validation:jakarta.validation-api:2.0.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/jakarta/validation/jakarta.validation-api/2.0.1/jakarta.validation-api-2.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/jakarta/validation/jakarta.validation-api/2.0.1/jakarta.validation-api-2.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/jakarta/validation/jakarta.validation-api/2.0.1/jakarta.validation-api-2.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.inject:javax.inject:1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/javax/inject/javax.inject/1/javax.inject-1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/javax/inject/javax.inject/1/javax.inject-1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.ws.rs:javax.ws.rs-api:2.0-m02">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/javax/ws/rs/javax.ws.rs-api/2.0-m02/javax.ws.rs-api-2.0-m02.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/javax/ws/rs/javax.ws.rs-api/2.0-m02/javax.ws.rs-api-2.0-m02-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/javax/ws/rs/javax.ws.rs-api/2.0-m02/javax.ws.rs-api-2.0-m02-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.ws.rs:jsr311-api:1.1.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: junit:junit:4.12">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/junit/junit/4.12/junit-4.12.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/junit/junit/4.12/junit-4.12-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/junit/junit/4.12/junit-4.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: log4j:log4j:1.2.17">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/log4j/log4j/1.2.17/log4j-1.2.17.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/log4j/log4j/1.2.17/log4j-1.2.17-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: mysql:mysql-connector-java:8.0.18">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/mysql/mysql-connector-java/8.0.18/mysql-connector-java-8.0.18.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/mysql/mysql-connector-java/8.0.18/mysql-connector-java-8.0.18-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/mysql/mysql-connector-java/8.0.18/mysql-connector-java-8.0.18-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.bytebuddy:byte-buddy-agent:1.10.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/net/bytebuddy/byte-buddy-agent/1.10.1/byte-buddy-agent-1.10.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/net/bytebuddy/byte-buddy-agent/1.10.1/byte-buddy-agent-1.10.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/net/bytebuddy/byte-buddy-agent/1.10.1/byte-buddy-agent-1.10.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.bytebuddy:byte-buddy:1.10.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/net/bytebuddy/byte-buddy/1.10.1/byte-buddy-1.10.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/net/bytebuddy/byte-buddy/1.10.1/byte-buddy-1.10.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/net/bytebuddy/byte-buddy/1.10.1/byte-buddy-1.10.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.minidev:accessors-smart:1.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/net/minidev/accessors-smart/1.2/accessors-smart-1.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/net/minidev/accessors-smart/1.2/accessors-smart-1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.minidev:json-smart:2.3">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/net/minidev/json-smart/2.3/json-smart-2.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/net/minidev/json-smart/2.3/json-smart-2.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/net/minidev/json-smart/2.3/json-smart-2.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.curator:curator-client:4.0.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/curator/curator-client/4.0.1/curator-client-4.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/curator/curator-client/4.0.1/curator-client-4.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/curator/curator-client/4.0.1/curator-client-4.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.curator:curator-framework:4.0.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/curator/curator-framework/4.0.1/curator-framework-4.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/curator/curator-framework/4.0.1/curator-framework-4.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/curator/curator-framework/4.0.1/curator-framework-4.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.curator:curator-recipes:4.0.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/curator/curator-recipes/4.0.1/curator-recipes-4.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/curator/curator-recipes/4.0.1/curator-recipes-4.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/curator/curator-recipes/4.0.1/curator-recipes-4.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.curator:curator-x-discovery:4.0.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/curator/curator-x-discovery/4.0.1/curator-x-discovery-4.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/curator/curator-x-discovery/4.0.1/curator-x-discovery-4.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/curator/curator-x-discovery/4.0.1/curator-x-discovery-4.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.httpcomponents:httpclient:4.5.10">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/httpcomponents/httpclient/4.5.10/httpclient-4.5.10.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/httpcomponents/httpclient/4.5.10/httpclient-4.5.10-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/httpcomponents/httpclient/4.5.10/httpclient-4.5.10-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.httpcomponents:httpclient:4.5.6">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.httpcomponents:httpcore:4.4.12">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/httpcomponents/httpcore/4.4.12/httpcore-4.4.12.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/httpcomponents/httpcore/4.4.12/httpcore-4.4.12-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/httpcomponents/httpcore/4.4.12/httpcore-4.4.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.logging.log4j:log4j-api:2.12.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.logging.log4j:log4j-to-slf4j:2.12.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/logging/log4j/log4j-to-slf4j/2.12.1/log4j-to-slf4j-2.12.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/logging/log4j/log4j-to-slf4j/2.12.1/log4j-to-slf4j-2.12.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/logging/log4j/log4j-to-slf4j/2.12.1/log4j-to-slf4j-2.12.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.27">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.27">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/tomcat/embed/tomcat-embed-el/9.0.27/tomcat-embed-el-9.0.27.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/tomcat/embed/tomcat-embed-el/9.0.27/tomcat-embed-el-9.0.27-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/tomcat/embed/tomcat-embed-el/9.0.27/tomcat-embed-el-9.0.27-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.27">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.27/tomcat-embed-websocket-9.0.27.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.27/tomcat-embed-websocket-9.0.27-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.27/tomcat-embed-websocket-9.0.27-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.yetus:audience-annotations:0.5.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.zookeeper:zookeeper-jute:3.6.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/zookeeper/zookeeper-jute/3.6.2/zookeeper-jute-3.6.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/zookeeper/zookeeper-jute/3.6.2/zookeeper-jute-3.6.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/zookeeper/zookeeper-jute/3.6.2/zookeeper-jute-3.6.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.zookeeper:zookeeper:3.6.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/zookeeper/zookeeper/3.6.2/zookeeper-3.6.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/zookeeper/zookeeper/3.6.2/zookeeper-3.6.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/zookeeper/zookeeper/3.6.2/zookeeper-3.6.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apiguardian:apiguardian-api:1.1.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.aspectj:aspectjweaver:1.9.4">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/aspectj/aspectjweaver/1.9.4/aspectjweaver-1.9.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/aspectj/aspectjweaver/1.9.4/aspectjweaver-1.9.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/aspectj/aspectjweaver/1.9.4/aspectjweaver-1.9.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.assertj:assertj-core:3.13.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/assertj/assertj-core/3.13.2/assertj-core-3.13.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/assertj/assertj-core/3.13.2/assertj-core-3.13.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/assertj/assertj-core/3.13.2/assertj-core-3.13.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.bouncycastle:bcpkix-jdk15on:1.60">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.bouncycastle:bcprov-jdk15on:1.60">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.dom4j:dom4j:2.1.3">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.flywaydb:flyway-core:6.0.6">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/flywaydb/flyway-core/6.0.6/flyway-core-6.0.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/flywaydb/flyway-core/6.0.6/flyway-core-6.0.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/flywaydb/flyway-core/6.0.6/flyway-core-6.0.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hamcrest:hamcrest:2.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/hamcrest/hamcrest/2.1/hamcrest-2.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/hamcrest/hamcrest/2.1/hamcrest-2.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hdrhistogram:HdrHistogram:2.1.9">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate.validator:hibernate-validator:6.0.17.Final">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jboss.logging:jboss-logging:3.4.1.Final">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.junit.jupiter:junit-jupiter-api:5.5.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.junit.jupiter:junit-jupiter-engine:5.5.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/jupiter/junit-jupiter-engine/5.5.2/junit-jupiter-engine-5.5.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/junit/jupiter/junit-jupiter-engine/5.5.2/junit-jupiter-engine-5.5.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/jupiter/junit-jupiter-engine/5.5.2/junit-jupiter-engine-5.5.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.junit.jupiter:junit-jupiter-params:5.5.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/jupiter/junit-jupiter-params/5.5.2/junit-jupiter-params-5.5.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/junit/jupiter/junit-jupiter-params/5.5.2/junit-jupiter-params-5.5.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/jupiter/junit-jupiter-params/5.5.2/junit-jupiter-params-5.5.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.junit.jupiter:junit-jupiter:5.5.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/jupiter/junit-jupiter/5.5.2/junit-jupiter-5.5.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/junit/jupiter/junit-jupiter/5.5.2/junit-jupiter-5.5.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/jupiter/junit-jupiter/5.5.2/junit-jupiter-5.5.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.junit.platform:junit-platform-commons:1.5.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.junit.platform:junit-platform-engine:1.5.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/platform/junit-platform-engine/1.5.2/junit-platform-engine-1.5.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/junit/platform/junit-platform-engine/1.5.2/junit-platform-engine-1.5.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/platform/junit-platform-engine/1.5.2/junit-platform-engine-1.5.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.junit.vintage:junit-vintage-engine:5.5.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/vintage/junit-vintage-engine/5.5.2/junit-vintage-engine-5.5.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/junit/vintage/junit-vintage-engine/5.5.2/junit-vintage-engine-5.5.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/junit/vintage/junit-vintage-engine/5.5.2/junit-vintage-engine-5.5.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.mapstruct:mapstruct-processor:1.5.2.Final">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/mapstruct/mapstruct-processor/1.5.2.Final/mapstruct-processor-1.5.2.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/mapstruct/mapstruct-processor/1.5.2.Final/mapstruct-processor-1.5.2.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/mapstruct/mapstruct-processor/1.5.2.Final/mapstruct-processor-1.5.2.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.mapstruct:mapstruct:1.5.2.Final">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/mapstruct/mapstruct/1.5.2.Final/mapstruct-1.5.2.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/mapstruct/mapstruct/1.5.2.Final/mapstruct-1.5.2.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/mapstruct/mapstruct/1.5.2.Final/mapstruct-1.5.2.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.mockito:mockito-core:3.1.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/mockito/mockito-core/3.1.0/mockito-core-3.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/mockito/mockito-core/3.1.0/mockito-core-3.1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/mockito/mockito-core/3.1.0/mockito-core-3.1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.mockito:mockito-junit-jupiter:3.1.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/mockito/mockito-junit-jupiter/3.1.0/mockito-junit-jupiter-3.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/mockito/mockito-junit-jupiter/3.1.0/mockito-junit-jupiter-3.1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/mockito/mockito-junit-jupiter/3.1.0/mockito-junit-jupiter-3.1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.objenesis:objenesis:2.6">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/objenesis/objenesis/2.6/objenesis-2.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/objenesis/objenesis/2.6/objenesis-2.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/objenesis/objenesis/2.6/objenesis-2.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.opentest4j:opentest4j:1.2.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.ow2.asm:asm:5.0.4">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/ow2/asm/asm/5.0.4/asm-5.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.projectlombok:lombok:1.16.16">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/projectlombok/lombok/1.16.16/lombok-1.16.16.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/projectlombok/lombok/1.16.16/lombok-1.16.16-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/projectlombok/lombok/1.16.16/lombok-1.16.16-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.skyscreamer:jsonassert:1.5.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:jul-to-slf4j:1.7.28">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/slf4j/jul-to-slf4j/1.7.28/jul-to-slf4j-1.7.28.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/slf4j/jul-to-slf4j/1.7.28/jul-to-slf4j-1.7.28-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/slf4j/jul-to-slf4j/1.7.28/jul-to-slf4j-1.7.28-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-api:1.7.28">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/slf4j/slf4j-api/1.7.28/slf4j-api-1.7.28.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/slf4j/slf4j-api/1.7.28/slf4j-api-1.7.28-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/slf4j/slf4j-api/1.7.28/slf4j-api-1.7.28-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-autoconfigure/2.2.0.RELEASE/spring-boot-autoconfigure-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-autoconfigure/2.2.0.RELEASE/spring-boot-autoconfigure-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-autoconfigure/2.2.0.RELEASE/spring-boot-autoconfigure-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-aop:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-aop/2.2.0.RELEASE/spring-boot-starter-aop-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-aop/2.2.0.RELEASE/spring-boot-starter-aop-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-aop/2.2.0.RELEASE/spring-boot-starter-aop-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-json:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-json/2.2.0.RELEASE/spring-boot-starter-json-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-json/2.2.0.RELEASE/spring-boot-starter-json-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-json/2.2.0.RELEASE/spring-boot-starter-json-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-logging:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-logging/2.2.0.RELEASE/spring-boot-starter-logging-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-logging/2.2.0.RELEASE/spring-boot-starter-logging-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-logging/2.2.0.RELEASE/spring-boot-starter-logging-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-security:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-security/2.2.0.RELEASE/spring-boot-starter-security-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-security/2.2.0.RELEASE/spring-boot-starter-security-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-security/2.2.0.RELEASE/spring-boot-starter-security-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-test:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-test/2.2.0.RELEASE/spring-boot-starter-test-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-test/2.2.0.RELEASE/spring-boot-starter-test-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-test/2.2.0.RELEASE/spring-boot-starter-test-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-tomcat:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-tomcat/2.2.0.RELEASE/spring-boot-starter-tomcat-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-tomcat/2.2.0.RELEASE/spring-boot-starter-tomcat-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-tomcat/2.2.0.RELEASE/spring-boot-starter-tomcat-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-validation:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-validation/2.2.0.RELEASE/spring-boot-starter-validation-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-validation/2.2.0.RELEASE/spring-boot-starter-validation-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-validation/2.2.0.RELEASE/spring-boot-starter-validation-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-web:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-web/2.2.0.RELEASE/spring-boot-starter-web-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-web/2.2.0.RELEASE/spring-boot-starter-web-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-web/2.2.0.RELEASE/spring-boot-starter-web-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter/2.2.0.RELEASE/spring-boot-starter-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter/2.2.0.RELEASE/spring-boot-starter-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter/2.2.0.RELEASE/spring-boot-starter-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-test-autoconfigure:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-test-autoconfigure/2.2.0.RELEASE/spring-boot-test-autoconfigure-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-test-autoconfigure/2.2.0.RELEASE/spring-boot-test-autoconfigure-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-test-autoconfigure/2.2.0.RELEASE/spring-boot-test-autoconfigure-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-test:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-test/2.2.0.RELEASE/spring-boot-test-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-test/2.2.0.RELEASE/spring-boot-test-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-test/2.2.0.RELEASE/spring-boot-test-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot/2.2.0.RELEASE/spring-boot-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot/2.2.0.RELEASE/spring-boot-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot/2.2.0.RELEASE/spring-boot-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-commons:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-commons/2.2.0.RELEASE/spring-cloud-commons-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-commons/2.2.0.RELEASE/spring-cloud-commons-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-commons/2.2.0.RELEASE/spring-cloud-commons-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-context:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-context/2.2.0.RELEASE/spring-cloud-context-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-context/2.2.0.RELEASE/spring-cloud-context-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-context/2.2.0.RELEASE/spring-cloud-context-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-netflix-archaius:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.0.RELEASE/spring-cloud-netflix-archaius-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.0.RELEASE/spring-cloud-netflix-archaius-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.0.RELEASE/spring-cloud-netflix-archaius-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-netflix-hystrix:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.0.RELEASE/spring-cloud-netflix-hystrix-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.0.RELEASE/spring-cloud-netflix-hystrix-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.0.RELEASE/spring-cloud-netflix-hystrix-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-netflix-ribbon:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.0.RELEASE/spring-cloud-netflix-ribbon-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.0.RELEASE/spring-cloud-netflix-ribbon-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.0.RELEASE/spring-cloud-netflix-ribbon-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-openfeign-core:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-openfeign-core/2.2.0.RELEASE/spring-cloud-openfeign-core-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-openfeign-core/2.2.0.RELEASE/spring-cloud-openfeign-core-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-openfeign-core/2.2.0.RELEASE/spring-cloud-openfeign-core-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-starter-loadbalancer:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.0.RELEASE/spring-cloud-starter-loadbalancer-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.0.RELEASE/spring-cloud-starter-loadbalancer-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.0.RELEASE/spring-cloud-starter-loadbalancer-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-archaius:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.0.RELEASE/spring-cloud-starter-netflix-archaius-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.0.RELEASE/spring-cloud-starter-netflix-archaius-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.0.RELEASE/spring-cloud-starter-netflix-archaius-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-ribbon:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.0.RELEASE/spring-cloud-starter-netflix-ribbon-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.0.RELEASE/spring-cloud-starter-netflix-ribbon-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.0.RELEASE/spring-cloud-starter-netflix-ribbon-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-starter-openfeign:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-openfeign/2.2.0.RELEASE/spring-cloud-starter-openfeign-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-openfeign/2.2.0.RELEASE/spring-cloud-starter-openfeign-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-openfeign/2.2.0.RELEASE/spring-cloud-starter-openfeign-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-starter-zookeeper-discovery:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-zookeeper-discovery/2.2.0.RELEASE/spring-cloud-starter-zookeeper-discovery-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-zookeeper-discovery/2.2.0.RELEASE/spring-cloud-starter-zookeeper-discovery-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-zookeeper-discovery/2.2.0.RELEASE/spring-cloud-starter-zookeeper-discovery-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-starter-zookeeper:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-zookeeper/2.2.0.RELEASE/spring-cloud-starter-zookeeper-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-zookeeper/2.2.0.RELEASE/spring-cloud-starter-zookeeper-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-zookeeper/2.2.0.RELEASE/spring-cloud-starter-zookeeper-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-starter:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter/2.2.0.RELEASE/spring-cloud-starter-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter/2.2.0.RELEASE/spring-cloud-starter-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter/2.2.0.RELEASE/spring-cloud-starter-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-zookeeper-core:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-zookeeper-core/2.2.0.RELEASE/spring-cloud-zookeeper-core-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-zookeeper-core/2.2.0.RELEASE/spring-cloud-zookeeper-core-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-zookeeper-core/2.2.0.RELEASE/spring-cloud-zookeeper-core-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-zookeeper-discovery:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-zookeeper-discovery/2.2.0.RELEASE/spring-cloud-zookeeper-discovery-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-zookeeper-discovery/2.2.0.RELEASE/spring-cloud-zookeeper-discovery-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-zookeeper-discovery/2.2.0.RELEASE/spring-cloud-zookeeper-discovery-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.security:spring-security-config:4.1.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-config/4.1.0.RELEASE/spring-security-config-4.1.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-config/4.1.0.RELEASE/spring-security-config-4.1.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-config/4.1.0.RELEASE/spring-security-config-4.1.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.security:spring-security-core:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-core/5.2.0.RELEASE/spring-security-core-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-core/5.2.0.RELEASE/spring-security-core-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-core/5.2.0.RELEASE/spring-security-core-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.security:spring-security-crypto:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-crypto/5.2.0.RELEASE/spring-security-crypto-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-crypto/5.2.0.RELEASE/spring-security-crypto-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-crypto/5.2.0.RELEASE/spring-security-crypto-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.security:spring-security-rsa:1.0.7.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-rsa/1.0.7.RELEASE/spring-security-rsa-1.0.7.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-rsa/1.0.7.RELEASE/spring-security-rsa-1.0.7.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-rsa/1.0.7.RELEASE/spring-security-rsa-1.0.7.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-aop:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-beans:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-beans/5.2.0.RELEASE/spring-beans-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-beans/5.2.0.RELEASE/spring-beans-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-beans/5.2.0.RELEASE/spring-beans-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-context:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-context/5.2.0.RELEASE/spring-context-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-context/5.2.0.RELEASE/spring-context-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-context/5.2.0.RELEASE/spring-context-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-core:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-core/5.2.0.RELEASE/spring-core-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-core/5.2.0.RELEASE/spring-core-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-core/5.2.0.RELEASE/spring-core-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-expression:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-expression/5.2.0.RELEASE/spring-expression-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-expression/5.2.0.RELEASE/spring-expression-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-expression/5.2.0.RELEASE/spring-expression-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-jcl:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-jcl/5.2.0.RELEASE/spring-jcl-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-jcl/5.2.0.RELEASE/spring-jcl-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-jcl/5.2.0.RELEASE/spring-jcl-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-test:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-test/5.2.0.RELEASE/spring-test-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-test/5.2.0.RELEASE/spring-test-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-test/5.2.0.RELEASE/spring-test-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-web:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-web/5.2.0.RELEASE/spring-web-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-web/5.2.0.RELEASE/spring-web-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-web/5.2.0.RELEASE/spring-web-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-webmvc:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-webmvc/5.2.0.RELEASE/spring-webmvc-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.xmlunit:xmlunit-core:2.6.3">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/xmlunit/xmlunit-core/2.6.3/xmlunit-core-2.6.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/xmlunit/xmlunit-core/2.6.3/xmlunit-core-2.6.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/xmlunit/xmlunit-core/2.6.3/xmlunit-core-2.6.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.yaml:snakeyaml:1.25">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/yaml/snakeyaml/1.25/snakeyaml-1.25.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/yaml/snakeyaml/1.25/snakeyaml-1.25-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/yaml/snakeyaml/1.25/snakeyaml-1.25-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.zeromq:jeromq:0.5.3-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+  </component>
 </project>

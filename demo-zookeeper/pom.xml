@@ -21,7 +21,7 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
-            <version>2.2.5.RELEASE</version>
+            <version>2.2.0.RELEASE</version>
             <exclusions>
                 <!--Zookeeper依赖版本需与服务端保持一致, 故需排除、显式引入-->
                 <exclusion>
@@ -50,11 +50,11 @@
             <version>2.2.0.RELEASE</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
-            <version>2.2.0.RELEASE</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-loadbalancer</artifactId>-->
+<!--            <version>2.2.0.RELEASE</version>-->
+<!--        </dependency>-->
     </dependencies>
 
 </project>
