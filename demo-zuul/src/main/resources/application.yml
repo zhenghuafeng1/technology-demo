@@ -1,0 +1,4 @@
+zuul:
+  routes:
+    zhf:
+      url: http://localhost:8101

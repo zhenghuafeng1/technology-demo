@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ce98ad3-f4db-47bc-b75e-75be4751f782" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/demo-cloud-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-cloud-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-cloud-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-cloud-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-zookeeper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-zookeeper/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-zookeeper/src/main/java/zhf/api/ZookeeperApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-zookeeper/src/main/java/zhf/api/ZookeeperApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-zookeeper/src/main/java/zhf/controller/ZookeeperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-zookeeper/src/main/java/zhf/controller/ZookeeperController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-zookeeper/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-zookeeper/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-zuul/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-zuul/src/main/java/zhf/ZuulApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-zuul/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.iws" afterDir="false" />
     </list>
@@ -177,6 +175,13 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="HIDE_WARNINGS" value="false" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -269,6 +274,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -284,7 +290,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ZookeeperApplication8102">
+  <component name="RunManager" selected="Spring Boot.ZuulApplication">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -393,6 +399,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-zuul" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zhf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.ZuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoLinuxApplication" />
@@ -400,9 +419,11 @@
       <item itemvalue="Spring Boot.ZookeeperApplication8102" />
       <item itemvalue="Spring Boot.CloudConsumerApplication" />
       <item itemvalue="Spring Boot.ZookeeperApplication8101" />
+      <item itemvalue="Spring Boot.ZuulApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ZuulApplication" />
         <item itemvalue="Spring Boot.ZookeeperApplication8101" />
         <item itemvalue="Spring Boot.CloudConsumerApplication" />
       </list>
@@ -445,7 +466,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669943574647</updated>
-      <workItem from="1669943577542" duration="3985000" />
+      <workItem from="1669943577542" duration="5368000" />
+      <workItem from="1669959951606" duration="288000" />
     </task>
     <servers />
   </component>
@@ -486,6 +508,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>

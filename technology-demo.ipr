@@ -466,8 +466,6 @@
     <checkstyleVersion>10.3.2</checkstyleVersion>
     <scanScope>JavaOnly</scanScope>
     <copyLibs>true</copyLibs>
-    <option name="thirdPartyClasspath" />
-    <option name="activeLocationIds" />
     <option name="locations">
       <list>
         <ConfigurationLocation id="bundled-sun-checks" type="BUNDLED" scope="All" description="Sun Checks">(bundled)</ConfigurationLocation>
@@ -495,6 +493,7 @@
         <module name="demo-liteflow" />
         <module name="demo-enum" />
         <module name="demo-mapstruct" />
+        <module name="demo-zuul" />
         <module name="demo-io" />
         <module name="demo-consumer" />
         <module name="demo-assert" />
@@ -534,6 +533,7 @@
       <module name="demo-tree" target="1.8" />
       <module name="demo-zeromq" target="1.8" />
       <module name="demo-zookeeper" target="1.8" />
+      <module name="demo-zuul" target="1.8" />
       <module name="technology-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -559,6 +559,7 @@
     <file url="file://$PROJECT_DIR$/demo-tree/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-zeromq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-zookeeper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-zuul/src/main/java" charset="UTF-8" />
   </component>
   <component name="ExportToHTMLSettings">
     <option name="PRINT_LINE_NUMBERS" value="false" />
@@ -609,6 +610,7 @@
       <module name="demo-tree" options="-parameters" />
       <module name="demo-zeromq" options="-parameters" />
       <module name="demo-zookeeper" options="-parameters" />
+      <module name="demo-zuul" options="-parameters" />
     </option>
   </component>
   <component name="JavadocGenerationManager">
@@ -664,6 +666,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo-tree/demo-tree.iml" filepath="$PROJECT_DIR$/demo-tree/demo-tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-zeromq/demo-zeromq.iml" filepath="$PROJECT_DIR$/demo-zeromq/demo-zeromq.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-zookeeper/demo-zookeeper.iml" filepath="$PROJECT_DIR$/demo-zookeeper/demo-zookeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-zuul/demo-zuul.iml" filepath="$PROJECT_DIR$/demo-zuul/demo-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/technology-demo.iml" filepath="$PROJECT_DIR$/technology-demo.iml" />
     </modules>
   </component>
@@ -878,6 +881,17 @@
         <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.0/jackson-datatype-jsr310-2.10.0-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: com.fasterxml.jackson.module:jackson-module-afterburner:2.10.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/module/jackson-module-afterburner/2.10.0/jackson-module-afterburner-2.10.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/module/jackson-module-afterburner/2.10.0/jackson-module-afterburner-2.10.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/module/jackson-module-afterburner/2.10.0/jackson-module-afterburner-2.10.0-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.0">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.10.0/jackson-module-parameter-names-2.10.0.jar!/" />
@@ -911,6 +925,17 @@
         <root url="jar://C:/Software/MavenRepository/com/github/jsqlparser/jsqlparser/1.4/jsqlparser-1.4-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: com.google.code.findbugs:annotations:2.0.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/google/code/findbugs/annotations/2.0.0/annotations-2.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/google/code/findbugs/annotations/2.0.0/annotations-2.0.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/google/code/findbugs/annotations/2.0.0/annotations-2.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: com.google.code.findbugs:jsr305:3.0.1">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar!/" />
@@ -920,6 +945,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://C:/Software/MavenRepository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.google.guava:guava:15.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/google/guava/guava/15.0/guava-15.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/google/guava/guava/15.0/guava-15.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/google/guava/guava/15.0/guava-15.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.google.guava:guava:16.0">
@@ -966,6 +1002,39 @@
         <root url="jar://C:/Software/MavenRepository/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: com.netflix.hystrix:hystrix-javanica:1.5.18">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/hystrix/hystrix-javanica/1.5.18/hystrix-javanica-1.5.18.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/hystrix/hystrix-javanica/1.5.18/hystrix-javanica-1.5.18-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/hystrix/hystrix-javanica/1.5.18/hystrix-javanica-1.5.18-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.hystrix:hystrix-metrics-event-stream:1.5.18">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.18/hystrix-metrics-event-stream-1.5.18.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.18/hystrix-metrics-event-stream-1.5.18-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.18/hystrix-metrics-event-stream-1.5.18-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.hystrix:hystrix-serialization:1.5.18">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/hystrix/hystrix-serialization/1.5.18/hystrix-serialization-1.5.18.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/hystrix/hystrix-serialization/1.5.18/hystrix-serialization-1.5.18-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/hystrix/hystrix-serialization/1.5.18/hystrix-serialization-1.5.18-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: com.netflix.netflix-commons:netflix-commons-util:0.1.1">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/com/netflix/netflix-commons/netflix-commons-util/0.1.1/netflix-commons-util-0.1.1.jar!/" />
@@ -975,6 +1044,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://C:/Software/MavenRepository/com/netflix/netflix-commons/netflix-commons-util/0.1.1/netflix-commons-util-0.1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.netflix-commons:netflix-commons-util:0.3.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/netflix-commons/netflix-commons-util/0.3.0/netflix-commons-util-0.3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/netflix-commons/netflix-commons-util/0.3.0/netflix-commons-util-0.3.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/netflix-commons/netflix-commons-util/0.3.0/netflix-commons-util-0.3.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.netflix.netflix-commons:netflix-statistics:0.1.1">
@@ -1054,6 +1134,17 @@
         <root url="jar://C:/Software/MavenRepository/com/netflix/servo/servo-core/0.10.1/servo-core-0.10.1-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: com.netflix.servo:servo-core:0.7.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/servo/servo-core/0.7.2/servo-core-0.7.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/servo/servo-core/0.7.2/servo-core-0.7.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/servo/servo-core/0.7.2/servo-core-0.7.2-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: com.netflix.servo:servo-internal:0.10.1">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/com/netflix/servo/servo-internal/0.10.1/servo-internal-0.10.1.jar!/" />
@@ -1063,6 +1154,28 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://C:/Software/MavenRepository/com/netflix/servo/servo-internal/0.10.1/servo-internal-0.10.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.netflix.zuul:zuul-core:1.3.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.stoyanr:evictor:1.0.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/stoyanr/evictor/1.0.0/evictor-1.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/stoyanr/evictor/1.0.0/evictor-1.0.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/stoyanr/evictor/1.0.0/evictor-1.0.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.sun.jersey.contribs:jersey-apache-client4:1.19.1">
@@ -1329,6 +1442,17 @@
         <root url="jar://C:/Software/MavenRepository/io/github/openfeign/feign-slf4j/10.4.0/feign-slf4j-10.4.0-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: io.micrometer:micrometer-core:1.3.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/micrometer/micrometer-core/1.3.0/micrometer-core-1.3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/micrometer/micrometer-core/1.3.0/micrometer-core-1.3.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/micrometer/micrometer-core/1.3.0/micrometer-core-1.3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: io.netty:netty-all:4.1.39.Final">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/" />
@@ -1426,6 +1550,39 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://C:/Software/MavenRepository/io/netty/netty-transport/4.1.42.Final/netty-transport-4.1.42.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.projectreactor.addons:reactor-extra:3.3.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/projectreactor/addons/reactor-extra/3.3.0.RELEASE/reactor-extra-3.3.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/projectreactor/addons/reactor-extra/3.3.0.RELEASE/reactor-extra-3.3.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/projectreactor/addons/reactor-extra/3.3.0.RELEASE/reactor-extra-3.3.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.projectreactor:reactor-core:3.3.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/projectreactor/reactor-core/3.3.0.RELEASE/reactor-core-3.3.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/projectreactor/reactor-core/3.3.0.RELEASE/reactor-core-3.3.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/projectreactor/reactor-core/3.3.0.RELEASE/reactor-core-3.3.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.reactivex:rxjava-reactive-streams:1.2.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: io.reactivex:rxjava:1.3.8">
@@ -1624,6 +1781,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://C:/Software/MavenRepository/net/minidev/json-smart/2.3/json-smart-2.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.commons:commons-lang3:3.9">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.apache.curator:curator-client:4.0.1">
@@ -1901,6 +2069,17 @@
         <root url="jar://C:/Software/MavenRepository/org/hamcrest/hamcrest/2.1/hamcrest-2.1-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.hdrhistogram:HdrHistogram:2.1.11">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/hdrhistogram/HdrHistogram/2.1.11/HdrHistogram-2.1.11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/hdrhistogram/HdrHistogram/2.1.11/HdrHistogram-2.1.11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/hdrhistogram/HdrHistogram/2.1.11/HdrHistogram-2.1.11-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.hdrhistogram:HdrHistogram:2.1.9">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.jar!/" />
@@ -2011,6 +2190,17 @@
         <root url="jar://C:/Software/MavenRepository/org/junit/vintage/junit-vintage-engine/5.5.2/junit-vintage-engine-5.5.2-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.latencyutils:LatencyUtils:2.0.3">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.mapstruct:mapstruct-processor:1.5.2.Final">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/org/mapstruct/mapstruct-processor/1.5.2.Final/mapstruct-processor-1.5.2.Final.jar!/" />
@@ -2099,6 +2289,17 @@
         <root url="jar://C:/Software/MavenRepository/org/projectlombok/lombok/1.16.16/lombok-1.16.16-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.reactivestreams:reactive-streams:1.0.3">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.skyscreamer:jsonassert:1.5.0">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar!/" />
@@ -2132,6 +2333,28 @@
         <root url="jar://C:/Software/MavenRepository/org/slf4j/slf4j-api/1.7.28/slf4j-api-1.7.28-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework.boot:spring-boot-actuator-autoconfigure:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.2.0.RELEASE/spring-boot-actuator-autoconfigure-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.2.0.RELEASE/spring-boot-actuator-autoconfigure-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.2.0.RELEASE/spring-boot-actuator-autoconfigure-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-actuator:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-actuator/2.2.0.RELEASE/spring-boot-actuator-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-actuator/2.2.0.RELEASE/spring-boot-actuator-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-actuator/2.2.0.RELEASE/spring-boot-actuator-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.2.0.RELEASE">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-autoconfigure/2.2.0.RELEASE/spring-boot-autoconfigure-2.2.0.RELEASE.jar!/" />
@@ -2143,6 +2366,17 @@
         <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-autoconfigure/2.2.0.RELEASE/spring-boot-autoconfigure-2.2.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-actuator:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-actuator/2.2.0.RELEASE/spring-boot-starter-actuator-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-actuator/2.2.0.RELEASE/spring-boot-starter-actuator-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-actuator/2.2.0.RELEASE/spring-boot-starter-actuator-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework.boot:spring-boot-starter-aop:2.2.0.RELEASE">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-aop/2.2.0.RELEASE/spring-boot-starter-aop-2.2.0.RELEASE.jar!/" />
@@ -2152,6 +2386,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-aop/2.2.0.RELEASE/spring-boot-starter-aop-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-cache:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-cache/2.2.0.RELEASE/spring-boot-starter-cache-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-cache/2.2.0.RELEASE/spring-boot-starter-cache-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-cache/2.2.0.RELEASE/spring-boot-starter-cache-2.2.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework.boot:spring-boot-starter-json:2.2.0.RELEASE">
@@ -2297,6 +2542,17 @@
         <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-context/2.2.0.RELEASE/spring-cloud-context-2.2.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-loadbalancer:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-loadbalancer/2.2.0.RELEASE/spring-cloud-loadbalancer-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-loadbalancer/2.2.0.RELEASE/spring-cloud-loadbalancer-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-loadbalancer/2.2.0.RELEASE/spring-cloud-loadbalancer-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework.cloud:spring-cloud-netflix-archaius:2.2.0.RELEASE">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.0.RELEASE/spring-cloud-netflix-archaius-2.2.0.RELEASE.jar!/" />
@@ -2328,6 +2584,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.0.RELEASE/spring-cloud-netflix-ribbon-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-netflix-zuul:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-zuul/2.2.0.RELEASE/spring-cloud-netflix-zuul-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-zuul/2.2.0.RELEASE/spring-cloud-netflix-zuul-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-netflix-zuul/2.2.0.RELEASE/spring-cloud-netflix-zuul-2.2.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework.cloud:spring-cloud-openfeign-core:2.2.0.RELEASE">
@@ -2363,6 +2630,17 @@
         <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.0.RELEASE/spring-cloud-starter-netflix-archaius-2.2.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-hystrix:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/2.2.0.RELEASE/spring-cloud-starter-netflix-hystrix-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/2.2.0.RELEASE/spring-cloud-starter-netflix-hystrix-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/2.2.0.RELEASE/spring-cloud-starter-netflix-hystrix-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-ribbon:2.2.0.RELEASE">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.0.RELEASE/spring-cloud-starter-netflix-ribbon-2.2.0.RELEASE.jar!/" />
@@ -2372,6 +2650,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.0.RELEASE/spring-cloud-starter-netflix-ribbon-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-zuul:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-zuul/2.2.0.RELEASE/spring-cloud-starter-netflix-zuul-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-zuul/2.2.0.RELEASE/spring-cloud-starter-netflix-zuul-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/cloud/spring-cloud-starter-netflix-zuul/2.2.0.RELEASE/spring-cloud-starter-netflix-zuul-2.2.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework.cloud:spring-cloud-starter-openfeign:2.2.0.RELEASE">
@@ -2484,6 +2773,17 @@
         <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-rsa/1.0.7.RELEASE/spring-security-rsa-1.0.7.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework.security:spring-security-web:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-web/5.2.0.RELEASE/spring-security-web-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-web/5.2.0.RELEASE/spring-security-web-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/security/spring-security-web/5.2.0.RELEASE/spring-security-web-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework:spring-aop:5.2.0.RELEASE">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/org/springframework/spring-aop/5.2.0.RELEASE/spring-aop-5.2.0.RELEASE.jar!/" />
@@ -2504,6 +2804,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://C:/Software/MavenRepository/org/springframework/spring-beans/5.2.0.RELEASE/spring-beans-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-context-support:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-context-support/5.2.0.RELEASE/spring-context-support-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-context-support/5.2.0.RELEASE/spring-context-support-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-context-support/5.2.0.RELEASE/spring-context-support-5.2.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework:spring-context:5.2.0.RELEASE">
@@ -2607,13 +2918,13 @@
     </library>
     <library name="Maven: org.zeromq:jeromq:0.5.3-SNAPSHOT">
       <CLASSES>
-        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-SNAPSHOT.jar!/" />
+        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-20221115.204312-53.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-SNAPSHOT-javadoc.jar!/" />
+        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-20221115.204312-53-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-SNAPSHOT-sources.jar!/" />
+        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-20221115.204312-53-sources.jar!/" />
       </SOURCES>
     </library>
   </component>

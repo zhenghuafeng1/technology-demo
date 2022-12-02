@@ -29,6 +29,7 @@
         <module>demo-zeromq</module>
         <module>demo-zookeeper</module>
         <module>demo-cloud-consumer</module>
+        <module>demo-zuul</module>
     </modules>
     <packaging>pom</packaging>
 
