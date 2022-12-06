@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ce98ad3-f4db-47bc-b75e-75be4751f782" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-zuul/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-zuul/src/main/java/zhf/ZuulApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-zuul/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/resources/db/migration/V1_202211205144800__DML_add_spi.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/resources/db/migration/V1__test_sql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-flyway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-flyway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-flyway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-flyway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.iws" afterDir="false" />
     </list>
@@ -217,7 +217,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="C:\Software\MavenRepository" />
-        <option name="mavenHome" value="C:\Software\IntelliJ IDEA 2020.2.4\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="C:/Software/apache-maven-3.8.1" />
         <option name="userSettingsFile" value="C:\Software\apache-maven-3.8.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -274,14 +274,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo-flyway/src/main/resources/db/migration" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\GitPro\technology-demo\demo-flyway\src\main\resources\db\migration" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -290,7 +297,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ZuulApplication">
+  <component name="RunManager" selected="Spring Boot.FlywayApplication">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -360,6 +367,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FlywayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-flyway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zhf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.FlywayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo-autowired" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.MainApplication" />
@@ -420,9 +440,11 @@
       <item itemvalue="Spring Boot.CloudConsumerApplication" />
       <item itemvalue="Spring Boot.ZookeeperApplication8101" />
       <item itemvalue="Spring Boot.ZuulApplication" />
+      <item itemvalue="Spring Boot.FlywayApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.FlywayApplication" />
         <item itemvalue="Spring Boot.ZuulApplication" />
         <item itemvalue="Spring Boot.ZookeeperApplication8101" />
         <item itemvalue="Spring Boot.CloudConsumerApplication" />
@@ -467,7 +489,10 @@
       <option name="presentableId" value="Default" />
       <updated>1669943574647</updated>
       <workItem from="1669943577542" duration="5368000" />
-      <workItem from="1669959951606" duration="288000" />
+      <workItem from="1669959951606" duration="1924000" />
+      <workItem from="1670203077044" duration="2729000" />
+      <workItem from="1670224805375" duration="1634000" />
+      <workItem from="1670290016393" duration="1290000" />
     </task>
     <servers />
   </component>
