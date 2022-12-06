@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ce98ad3-f4db-47bc-b75e-75be4751f782" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-workspace/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/WorkSpaceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/base/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/base/CommonMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/controller/WorkspaceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/entity/DocBlockEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/entity/DocMainEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/entity/model/DocMainListResponseVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/entity/model/DocMainResponseVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/entity/model/DocMainSortRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/repository/DocMainRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/repository/sql/DocMainMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/service/WorkspaceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/service/impl/WorkspaceServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/technology-demo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/service/impl/WorkspaceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/service/impl/WorkspaceServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -522,7 +506,7 @@
       <workItem from="1670203077044" duration="2729000" />
       <workItem from="1670224805375" duration="1634000" />
       <workItem from="1670290016393" duration="1290000" />
-      <workItem from="1670308087534" duration="11070000" />
+      <workItem from="1670308087534" duration="12387000" />
     </task>
     <servers />
   </component>

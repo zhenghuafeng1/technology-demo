@@ -44,7 +44,7 @@ public class WorkspaceServiceImpl implements WorkspaceService {
         List<DocMainEntity> docMainList = docMainRepository.getPeerByCurrentCode(docEntity.getParentCode(), request.getCurrentCode());
         // 获取previousCode和nextCode的entity
         AtomicReference<BigDecimal> previousOrder = new AtomicReference<>(new BigDecimal(BigInteger.ZERO));
-        AtomicReference<BigDecimal> nextOrder;
+        AtomicReference<BigDecimal> nextOrder = new AtomicReference<>(new BigDecimal(BigInteger.ZERO));
 //        if (StringUtils.isEmpty(request.getPreviousCode())) {
 //            previousOrder = new AtomicReference<>(new BigDecimal(BigInteger.ZERO));
 //        }
@@ -54,6 +54,15 @@ public class WorkspaceServiceImpl implements WorkspaceService {
         docMainList.forEach(docMain ->{
             if (docMain.getDocCode().equals(request.getPreviousCode()) && docMain.getDocOrder() != null) {
                 previousOrder.set(docMain.getDocOrder());
+            }
+            if (docMain.getDocCode().equals(request.getNextCode())) {
+                if (docMain.getDocOrder() == null) {
+                    nextOrder.set(docMain.getDocOrder());
+                }
+                else {
+                    nextOrder.set(docMain.getDocOrder());
+                }
+
             }
         });
         // 转成链表
