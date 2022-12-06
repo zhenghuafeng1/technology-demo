@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.106.199.6:3306/technology-demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: zhenghuafeng
+    tomcat:
+      initial-size: 10
+      max-idle: 20
+      min-idle: 5
+      max-active: 50
+      log-abandoned: true
+      remove-abandoned: true
+      remove-abandoned-timeout: 1800
+      max-wait: 1000
+      test-while-idle: true
+      min-evictable-idle-time-millis: 600000
+      time-between-eviction-runs-millis: 300000

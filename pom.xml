@@ -30,6 +30,7 @@
         <module>demo-zookeeper</module>
         <module>demo-cloud-consumer</module>
         <module>demo-zuul</module>
+        <module>demo-workspace</module>
     </modules>
     <packaging>pom</packaging>
 

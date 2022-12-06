@@ -493,6 +493,7 @@
         <module name="demo-liteflow" />
         <module name="demo-enum" />
         <module name="demo-mapstruct" />
+        <module name="demo-workspace" />
         <module name="demo-zuul" />
         <module name="demo-io" />
         <module name="demo-consumer" />
@@ -531,6 +532,7 @@
       <module name="demo-netty" target="1.8" />
       <module name="demo-security" target="1.8" />
       <module name="demo-tree" target="1.8" />
+      <module name="demo-workspace" target="1.8" />
       <module name="demo-zeromq" target="1.8" />
       <module name="demo-zookeeper" target="1.8" />
       <module name="demo-zuul" target="1.8" />
@@ -557,6 +559,7 @@
     <file url="file://$PROJECT_DIR$/demo-netty/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-tree/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-workspace/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-zeromq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-zookeeper/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-zuul/src/main/java" charset="UTF-8" />
@@ -608,6 +611,7 @@
       <module name="demo-netty" options="-parameters" />
       <module name="demo-security" options="-parameters" />
       <module name="demo-tree" options="-parameters" />
+      <module name="demo-workspace" options="-parameters" />
       <module name="demo-zeromq" options="-parameters" />
       <module name="demo-zookeeper" options="-parameters" />
       <module name="demo-zuul" options="-parameters" />
@@ -643,6 +647,127 @@
   <component name="PDMPlugin">
     <option name="skipTestSources" value="false" />
   </component>
+  <component name="Palette2">
+    <group name="Swing">
+      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+      </item>
+      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
+        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+        <initial-values>
+          <property name="text" value="Button" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="RadioButton" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="CheckBox" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="Label" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+          <preferred-size width="-1" height="20" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+      </item>
+    </group>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/demo-adapter/demo-adapter.iml" filepath="$PROJECT_DIR$/demo-adapter/demo-adapter.iml" />
@@ -664,6 +789,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo-netty/demo-netty.iml" filepath="$PROJECT_DIR$/demo-netty/demo-netty.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-security/demo-security.iml" filepath="$PROJECT_DIR$/demo-security/demo-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-tree/demo-tree.iml" filepath="$PROJECT_DIR$/demo-tree/demo-tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-workspace/demo-workspace.iml" filepath="$PROJECT_DIR$/demo-workspace/demo-workspace.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-zeromq/demo-zeromq.iml" filepath="$PROJECT_DIR$/demo-zeromq/demo-zeromq.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-zookeeper/demo-zookeeper.iml" filepath="$PROJECT_DIR$/demo-zookeeper/demo-zookeeper.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-zuul/demo-zuul.iml" filepath="$PROJECT_DIR$/demo-zuul/demo-zuul.iml" />
@@ -1266,6 +1392,17 @@
         <root url="jar://C:/Software/MavenRepository/com/yomahub/liteflow-spring/2.8.5/liteflow-spring-2.8.5-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: com.zaxxer:HikariCP:3.4.1">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/com/zaxxer/HikariCP/3.4.1/HikariCP-3.4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/com/zaxxer/HikariCP/3.4.1/HikariCP-3.4.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/com/zaxxer/HikariCP/3.4.1/HikariCP-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: commons-beanutils:commons-beanutils:1.9.3">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar!/" />
@@ -1682,6 +1819,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://C:/Software/MavenRepository/javax/inject/javax.inject/1/javax.inject-1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.persistence:persistence-api:1.0">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/javax/persistence/persistence-api/1.0/persistence-api-1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/javax/persistence/persistence-api/1.0/persistence-api-1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/javax/persistence/persistence-api/1.0/persistence-api-1.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: javax.ws.rs:javax.ws.rs-api:2.0-m02">
@@ -2245,6 +2393,28 @@
         <root url="jar://C:/Software/MavenRepository/org/mockito/mockito-junit-jupiter/3.1.0/mockito-junit-jupiter-3.1.0-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.mybatis:mybatis-spring:1.3.2">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.mybatis:mybatis:3.4.6">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.objenesis:objenesis:2.6">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/org/objenesis/objenesis/2.6/objenesis-2.6.jar!/" />
@@ -2397,6 +2567,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-cache/2.2.0.RELEASE/spring-boot-starter-cache-2.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-jdbc/2.2.0.RELEASE/spring-boot-starter-jdbc-2.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-jdbc/2.2.0.RELEASE/spring-boot-starter-jdbc-2.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/boot/spring-boot-starter-jdbc/2.2.0.RELEASE/spring-boot-starter-jdbc-2.2.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework.boot:spring-boot-starter-json:2.2.0.RELEASE">
@@ -2861,6 +3042,17 @@
         <root url="jar://C:/Software/MavenRepository/org/springframework/spring-jcl/5.2.0.RELEASE/spring-jcl-5.2.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework:spring-jdbc:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-jdbc/5.2.0.RELEASE/spring-jdbc-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-jdbc/5.2.0.RELEASE/spring-jdbc-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-jdbc/5.2.0.RELEASE/spring-jdbc-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework:spring-test:5.2.0.RELEASE">
       <CLASSES>
         <root url="jar://C:/Software/MavenRepository/org/springframework/spring-test/5.2.0.RELEASE/spring-test-5.2.0.RELEASE.jar!/" />
@@ -2870,6 +3062,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://C:/Software/MavenRepository/org/springframework/spring-test/5.2.0.RELEASE/spring-test-5.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-tx:5.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-tx/5.2.0.RELEASE/spring-tx-5.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-tx/5.2.0.RELEASE/spring-tx-5.2.0.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/org/springframework/spring-tx/5.2.0.RELEASE/spring-tx-5.2.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework:spring-web:5.2.0.RELEASE">
@@ -2925,6 +3128,83 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-20221203.203307-54-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: tk.mybatis:mapper-base:1.1.5">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-base/1.1.5/mapper-base-1.1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-base/1.1.5/mapper-base-1.1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-base/1.1.5/mapper-base-1.1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: tk.mybatis:mapper-core:1.1.5">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-core/1.1.5/mapper-core-1.1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-core/1.1.5/mapper-core-1.1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-core/1.1.5/mapper-core-1.1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: tk.mybatis:mapper-extra:1.1.5">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-extra/1.1.5/mapper-extra-1.1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-extra/1.1.5/mapper-extra-1.1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-extra/1.1.5/mapper-extra-1.1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: tk.mybatis:mapper-spring-boot-autoconfigure:2.1.5">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-spring-boot-autoconfigure/2.1.5/mapper-spring-boot-autoconfigure-2.1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-spring-boot-autoconfigure/2.1.5/mapper-spring-boot-autoconfigure-2.1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-spring-boot-autoconfigure/2.1.5/mapper-spring-boot-autoconfigure-2.1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: tk.mybatis:mapper-spring-boot-starter:2.1.5">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-spring-boot-starter/2.1.5/mapper-spring-boot-starter-2.1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-spring-boot-starter/2.1.5/mapper-spring-boot-starter-2.1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-spring-boot-starter/2.1.5/mapper-spring-boot-starter-2.1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: tk.mybatis:mapper-spring:1.1.5">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-spring/1.1.5/mapper-spring-1.1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-spring/1.1.5/mapper-spring-1.1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-spring/1.1.5/mapper-spring-1.1.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: tk.mybatis:mapper-weekend:1.1.5">
+      <CLASSES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-weekend/1.1.5/mapper-weekend-1.1.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-weekend/1.1.5/mapper-weekend-1.1.5-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://C:/Software/MavenRepository/tk/mybatis/mapper-weekend/1.1.5/mapper-weekend-1.1.5-sources.jar!/" />
       </SOURCES>
     </library>
   </component>
