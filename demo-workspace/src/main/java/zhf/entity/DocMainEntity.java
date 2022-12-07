@@ -1,5 +1,6 @@
 package zhf.entity;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -17,6 +18,7 @@ import java.math.BigDecimal;
  **/
 @Data
 @Entity
+@Builder
 @Table(name = "doc_main")
 public class DocMainEntity {
     /**
@@ -24,7 +26,7 @@ public class DocMainEntity {
      */
     @Id
     @GeneratedValue(generator = "JDBC")
-    private String id;
+    private Long id;
 
     private String docCode;
 

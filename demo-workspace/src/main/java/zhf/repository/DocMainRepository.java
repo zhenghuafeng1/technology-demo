@@ -44,7 +44,7 @@ public class DocMainRepository extends BaseRepository<DocMainEntity> {
     public DocMainEntity getDocMain(String currentCode) {
         Example example = new Example(DocMainEntity.class);
         Example.Criteria criteria = example.createCriteria();
-        criteria.andEqualTo("currentCode", currentCode);
+        criteria.andEqualTo("docCode", currentCode);
         return mapper.selectOneByExample(example);
     }
 
@@ -59,13 +59,13 @@ public class DocMainRepository extends BaseRepository<DocMainEntity> {
         Example example = new Example(DocMainEntity.class);
         Example.Criteria criteria = example.createCriteria();
         criteria.andEqualTo("parentCode", parentCode);
-        criteria.andNotEqualTo("currentCode", currentCode);
+        criteria.andNotEqualTo("docCode", currentCode);
         example.setOrderByClause("doc_order ASC");
         return mapper.selectByExample(example);
     }
 
-    public void updateDocOrderBathch(List<DocMainEntity> docMainEntities) {
-
+    public void updateDocOrderBatch(List<DocMainEntity> docMainEntities) {
+        mapper.updateDocOrderBatch(docMainEntities);
     }
 
 }

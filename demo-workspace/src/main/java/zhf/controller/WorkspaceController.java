@@ -32,7 +32,7 @@ public class WorkspaceController {
 
     @PutMapping("/sort")
     public DocMainListResponseVO sort(@RequestBody DocMainSortRequest request) {
-
+        workspaceService.docMainSort(request);
         return workspaceService.getDocMainList();
     }
 }

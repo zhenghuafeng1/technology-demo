@@ -1,6 +1,8 @@
 package zhf.service.impl;
 
+import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.collections.list.PredicatedList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -9,9 +11,11 @@ import zhf.entity.model.DocMainListResponseVO;
 import zhf.entity.model.DocMainSortRequest;
 import zhf.repository.DocMainRepository;
 import zhf.service.WorkspaceService;
+import zhf.utils.SortNode;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -29,6 +33,9 @@ public class WorkspaceServiceImpl implements WorkspaceService {
     @Autowired
     private DocMainRepository docMainRepository;
 
+    @Autowired
+    private SortNode sortNode;
+
     @Override
     public DocMainListResponseVO getDocMainList() {
         return DocMainListResponseVO.builder().docMainList(docMainRepository.getDocMainList()).build();
@@ -39,36 +46,42 @@ public class WorkspaceServiceImpl implements WorkspaceService {
 
         // 根据currentCode获取docEntity
         DocMainEntity docEntity = docMainRepository.getDocMain(request.getCurrentCode());
-        // TODO: 2022/12/6 空值判断
         // 获取同级目录和文档
         List<DocMainEntity> docMainList = docMainRepository.getPeerByCurrentCode(docEntity.getParentCode(), request.getCurrentCode());
-        // 获取previousCode和nextCode的entity
-        AtomicReference<BigDecimal> previousOrder = new AtomicReference<>(new BigDecimal(BigInteger.ZERO));
-        AtomicReference<BigDecimal> nextOrder = new AtomicReference<>(new BigDecimal(BigInteger.ZERO));
-//        if (StringUtils.isEmpty(request.getPreviousCode())) {
-//            previousOrder = new AtomicReference<>(new BigDecimal(BigInteger.ZERO));
-//        }
-//        if (StringUtils.isEmpty(request.getPreviousCode())) {
-//            nextOrder = new AtomicReference<>(new BigDecimal(BigInteger.ZERO));
-//        }
-        docMainList.forEach(docMain ->{
-            if (docMain.getDocCode().equals(request.getPreviousCode()) && docMain.getDocOrder() != null) {
-                previousOrder.set(docMain.getDocOrder());
-            }
-            if (docMain.getDocCode().equals(request.getNextCode())) {
-                if (docMain.getDocOrder() == null) {
-                    nextOrder.set(docMain.getDocOrder());
-                }
-                else {
-                    nextOrder.set(docMain.getDocOrder());
-                }
 
-            }
-        });
-        // 转成链表
+        SortNode node = sortNode.build(docMainList);
+        log.info(node.toString());
+        //第一个文档
+        /*if (StringUtils.isEmpty(request.getPreviousCode())) {
+            docEntity.setDocOrder(BigDecimal.ZERO);
+            sortNode.addHeader(node, docEntity);
+            sortDocMain(node);
+            return;
+        }*/
 
+        //最后一个文档
+        sortNode.addTail(node, docEntity);
+        log.info(node.toString());
+    }
 
-        docMainRepository.updateDocOrderBathch(docMainList);
+    /**
+     * @author zhenghf
+     * @date 2022/12/7
+     * @description 排序
+     * @param sortNode
+     */
+    private void sortDocMain(SortNode sortNode) {
+        List<DocMainEntity> docMains = new ArrayList<>();
+        while (sortNode != null) {
+            DocMainEntity docMain = DocMainEntity.builder()
+                    .id(sortNode.getDocEntity().getId())
+                    .docOrder(sortNode.getOrderCode())
+                    .build();
+            docMains.add(docMain);
+            sortNode = sortNode.getNext();
+        }
+        log.info(docMains.toString());
+//        docMainRepository.updateDocOrderBatch(docMains);
     }
 
 
