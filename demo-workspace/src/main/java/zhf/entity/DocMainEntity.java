@@ -1,7 +1,9 @@
 package zhf.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,9 +18,11 @@ import java.math.BigDecimal;
  * @Description
  * @Version 1.0
  **/
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Entity
-@Builder
 @Table(name = "doc_main")
 public class DocMainEntity {
     /**

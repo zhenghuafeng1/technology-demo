@@ -1,6 +1,7 @@
 package zhf.component;
 
 import com.yomahub.liteflow.core.FlowExecutor;
+import com.yomahub.liteflow.flow.LiteflowResponse;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,6 @@ public class ComponentTest {
         personEntity.setName("zhf");
         personEntity.setSex(SexEnum.BOY);
         //执行回家流程
-        flowExecutor.execute2Resp("goHome",personEntity);
+        LiteflowResponse goHome = flowExecutor.execute2Resp("goHome", personEntity);
     }
 }

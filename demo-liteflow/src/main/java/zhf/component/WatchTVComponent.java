@@ -2,6 +2,7 @@ package zhf.component;
 
 import com.yomahub.liteflow.annotation.LiteflowComponent;
 import com.yomahub.liteflow.core.NodeComponent;
+import com.yomahub.liteflow.slot.Slot;
 import lombok.extern.slf4j.Slf4j;
 import zhf.entity.PersonEntity;
 

@@ -24,5 +24,6 @@ public class HavingDinnerComponent extends NodeComponent {
               log.info("嚼......");
               Thread.sleep(2000);
           }
+        throw new RuntimeException("xxxxxxxxx");
     }
 }

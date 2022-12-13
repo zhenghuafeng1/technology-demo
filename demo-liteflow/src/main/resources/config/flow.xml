@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <flow>
     <chain name="goHome">
-        <then value="washHandsComponent"/>
-        <when value="havingDinnerComponent"/>
-        <when value="watchTVComponent"/>
+<!--        <then value="washHandsComponent"/>-->
+<!--        <when value="havingDinnerComponent"/>-->
+<!--        <when value="watchTVComponent"/>-->
+        <when value="e(washHandsComponent|havingDinnerComponent|watchTVComponent)"/>
     </chain>
 </flow>
 <!--    <chain name="girlGoHome">-->

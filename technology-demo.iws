@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ce98ad3-f4db-47bc-b75e-75be4751f782" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/utils/SortNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-liteflow/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-liteflow/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-liteflow/src/main/java/zhf/component/GoHomeCondComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-liteflow/src/main/java/zhf/component/GoHomeCondComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-liteflow/src/main/java/zhf/component/HavingDinnerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-liteflow/src/main/java/zhf/component/HavingDinnerComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-liteflow/src/main/resources/config/flow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-liteflow/src/main/resources/config/flow.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-liteflow/src/test/java/zhf/component/ComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-liteflow/src/test/java/zhf/component/ComponentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/controller/WorkspaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/controller/WorkspaceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/entity/DocMainEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/entity/DocMainEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/repository/DocMainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/repository/DocMainRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/repository/sql/DocMainMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/repository/sql/DocMainMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/service/impl/WorkspaceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/service/impl/WorkspaceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-workspace/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.iws" afterDir="false" />
     </list>
@@ -181,6 +183,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -288,10 +291,16 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
+  <component name="ReaderModeSettings">
+    <option name="showRenderedDocs" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\GitPro\technology-demo\demo-workspace\src\main\java\zhf\base" />
       <recent name="F:\GitPro\technology-demo\demo-flyway\src\main\resources\db\migration" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="zhf.config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -301,7 +310,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.WorkSpaceApplication">
+  <component name="RunManager" selected="JUnit.ComponentTest.componentTest">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -314,6 +323,27 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComponentTest.componentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-liteflow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zhf.component.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="zhf.component" />
+      <option name="MAIN_CLASS_NAME" value="zhf.component.ComponentTest" />
+      <option name="METHOD_NAME" value="componentTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -338,21 +368,6 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="demo-enum" />
       <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CloudConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-cloud-consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zhf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.CloudConsumerApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -450,11 +465,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ComponentTest.componentTest" />
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoLinuxApplication" />
       <item itemvalue="Spring Boot.MainApplication" />
       <item itemvalue="Spring Boot.ZookeeperApplication8102" />
-      <item itemvalue="Spring Boot.CloudConsumerApplication" />
       <item itemvalue="Spring Boot.ZookeeperApplication8101" />
       <item itemvalue="Spring Boot.ZuulApplication" />
       <item itemvalue="Spring Boot.FlywayApplication" />
@@ -462,11 +477,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ComponentTest.componentTest" />
         <item itemvalue="Spring Boot.WorkSpaceApplication" />
         <item itemvalue="Spring Boot.FlywayApplication" />
         <item itemvalue="Spring Boot.ZuulApplication" />
         <item itemvalue="Spring Boot.ZookeeperApplication8101" />
-        <item itemvalue="Spring Boot.CloudConsumerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -513,7 +528,10 @@
       <workItem from="1670224805375" duration="1634000" />
       <workItem from="1670290016393" duration="1290000" />
       <workItem from="1670308087534" duration="12714000" />
-      <workItem from="1670375050659" duration="21046000" />
+      <workItem from="1670375050659" duration="21536000" />
+      <workItem from="1670470334383" duration="4061000" />
+      <workItem from="1670550017767" duration="8757000" />
+      <workItem from="1670806903182" duration="592000" />
     </task>
     <servers />
   </component>

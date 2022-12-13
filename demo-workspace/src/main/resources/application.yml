@@ -19,3 +19,5 @@ spring:
       test-while-idle: true
       min-evictable-idle-time-millis: 600000
       time-between-eviction-runs-millis: 300000
+
+document:
