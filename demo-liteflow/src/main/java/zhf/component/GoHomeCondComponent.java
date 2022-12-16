@@ -22,6 +22,7 @@ public class GoHomeCondComponent extends NodeCondComponent {
     @Override
     public String processCond() throws Exception {
         testService.getTest();
-        return "watchTVComponent";
+        Class c2 = WatchTVComponent.class;
+        return "washHandsComponent";
     }
 }

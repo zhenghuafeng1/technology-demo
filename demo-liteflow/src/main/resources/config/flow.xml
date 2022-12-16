@@ -2,9 +2,10 @@
 <flow>
     <chain name="goHome">
 <!--        <then value="washHandsComponent"/>-->
-<!--        <when value="havingDinnerComponent"/>-->
 <!--        <when value="watchTVComponent"/>-->
-        <when value="e(washHandsComponent|havingDinnerComponent|watchTVComponent)"/>
+<!--        <when value="havingDinnerComponent"/>-->
+        <then value="e(washHandsComponent|watchTVComponent)"/>
+        <when value="havingDinnerComponent"/>
     </chain>
 </flow>
 <!--    <chain name="girlGoHome">-->

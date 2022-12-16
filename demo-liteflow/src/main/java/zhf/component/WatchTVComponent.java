@@ -21,6 +21,10 @@ public class WatchTVComponent extends NodeComponent {
     public void process() throws Exception {
         PersonEntity person = this.getRequestData();
         log.info("我的名字是{}，我在看电视！", person.getName());
+        if (false) {
+            return;
+        }
+
         for (int i = 0; i < 5; i++) {
               log.info("盯......");
               Thread.sleep(2000);
