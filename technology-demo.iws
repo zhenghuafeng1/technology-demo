@@ -5,26 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ce98ad3-f4db-47bc-b75e-75be4751f782" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/controller/DesignModeCotroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/ShapeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/adapterPattern/config/TrackingCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/adapterPattern/controller/AdapterController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/adapterPattern/enums/BuriedPointEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/adapterPattern/listener/DataListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/adapterPattern/service/AbstractDataHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/adapterPattern/service/BaseService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/adapterPattern/service/DataSaveHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/adapterPattern/service/IDataHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/adapterPattern/service/ParamSetHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/adapterPattern/service/TurnLogHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/adapterPattern/service/impl/GooglAnalyticsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/adapterPattern/service/impl/MatomoServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/adapterPattern/service/impl/SaveDataServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/color/Blue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/color/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/color/Green.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/color/Red.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/service/AbstractFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/service/ColorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/service/FactoryProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/shape/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/shape/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/shape/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/shape/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/DesignModeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/controller/DesignModeCotroller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/factoryPattern/ShapeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/DesignModeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/DesignModeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/controller/DesignModeCotroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/controller/DesignModeCotroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/factoryPattern/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/factoryPattern/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/factoryPattern/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/service/ShapeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/factoryPattern/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/resources/application.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.iws" afterDir="false" />
     </list>
@@ -292,7 +297,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/base" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -308,11 +313,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\GitPro\technology-demo\demo-designMode\demo-designMode-factoryPattern\src\main\java\zhf" />
       <recent name="F:\GitPro\technology-demo\demo-workspace\src\main\java\zhf\base" />
       <recent name="F:\GitPro\technology-demo\demo-flyway\src\main\resources\db\migration" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="zhf.config" />
+      <recent name="zhf.controller" />
+      <recent name="zhf.service" />
+      <recent name="zhf.color" />
+      <recent name="zhf.shape" />
+      <recent name="zhf" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -322,7 +332,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DesignModeApplication">
+  <component name="RunManager" selected="Spring Boot.DesignModeApplication (2)">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -419,6 +429,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DesignModeApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-designMode-factoryPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zhf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.DesignModeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DesignModeApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-designMode-abstractFactoryPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zhf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.DesignModeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DesignModeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="demo-designMode" />
       <extension name="coverage">
@@ -432,35 +468,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlywayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-flyway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zhf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.FlywayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo-autowired" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.MainApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WorkSpaceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-workspace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zhf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.WorkSpaceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -488,17 +498,17 @@
       <item itemvalue="Spring Boot.DemoLinuxApplication" />
       <item itemvalue="Spring Boot.MainApplication" />
       <item itemvalue="Spring Boot.ZookeeperApplication8102" />
-      <item itemvalue="Spring Boot.FlywayApplication" />
-      <item itemvalue="Spring Boot.WorkSpaceApplication" />
       <item itemvalue="Spring Boot.DesignModeApplication" />
+      <item itemvalue="Spring Boot.DesignModeApplication (1)" />
+      <item itemvalue="Spring Boot.DesignModeApplication (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DesignModeApplication (2)" />
+        <item itemvalue="Spring Boot.DesignModeApplication (1)" />
         <item itemvalue="Spring Boot.DesignModeApplication" />
         <item itemvalue="JUnit.ComponentTest.componentTest" />
         <item itemvalue="JUnit.ComponentTest.test" />
-        <item itemvalue="Spring Boot.WorkSpaceApplication" />
-        <item itemvalue="Spring Boot.FlywayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -556,6 +566,7 @@
       <workItem from="1671411365762" duration="812000" />
       <workItem from="1671412647439" duration="1702000" />
       <workItem from="1671430848310" duration="2145000" />
+      <workItem from="1671438360892" duration="2251000" />
     </task>
     <servers />
   </component>

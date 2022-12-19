@@ -488,6 +488,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo-flyway" />
+        <module name="demo-designMode-abstractFactoryPattern" />
         <module name="demo-cloud-consumer" />
         <module name="demo-linux-application" />
         <module name="demo-liteflow" />
@@ -498,6 +499,7 @@
         <module name="demo-io" />
         <module name="demo-consumer" />
         <module name="demo-assert" />
+        <module name="demo-designMode-factoryPattern" />
         <module name="demo-zookeeper" />
         <module name="demo-function" />
         <module name="demo-lambda" />
@@ -509,7 +511,6 @@
         <module name="demo-autowired" />
         <module name="demo-tree" />
         <module name="demo-security" />
-        <module name="demo-designMode" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -520,6 +521,8 @@
       <module name="demo-common" target="1.8" />
       <module name="demo-consumer" target="1.8" />
       <module name="demo-designMode" target="1.8" />
+      <module name="demo-designMode-abstractFactoryPattern" target="1.8" />
+      <module name="demo-designMode-factoryPattern" target="1.8" />
       <module name="demo-docker-application" target="1.8" />
       <module name="demo-enum" target="1.8" />
       <module name="demo-flyway" target="1.8" />
@@ -546,7 +549,8 @@
     <file url="file://$PROJECT_DIR$/demo-cloud-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-consumer/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/demo-designMode/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-docker-application/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-enum/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-flyway/src/main/java" charset="UTF-8" />
@@ -598,7 +602,9 @@
       <module name="demo-cloud-consumer" options="-parameters" />
       <module name="demo-common" options="-parameters" />
       <module name="demo-consumer" options="-parameters" />
-      <module name="demo-designMode" options="-parameters" />
+      <module name="demo-designMode" options="" />
+      <module name="demo-designMode-abstractFactoryPattern" options="-parameters" />
+      <module name="demo-designMode-factoryPattern" options="-parameters" />
       <module name="demo-docker-application" options="-parameters" />
       <module name="demo-enum" options="-parameters" />
       <module name="demo-flyway" options="-parameters" />
@@ -778,6 +784,8 @@
       <module fileurl="file://$PROJECT_DIR$/demo-common/demo-common.iml" filepath="$PROJECT_DIR$/demo-common/demo-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-consumer/demo-consumer.iml" filepath="$PROJECT_DIR$/demo-consumer/demo-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-designMode/demo-designMode.iml" filepath="$PROJECT_DIR$/demo-designMode/demo-designMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/demo-designMode-abstractFactoryPattern.iml" filepath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/demo-designMode-abstractFactoryPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/demo-designMode-factoryPattern.iml" filepath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/demo-designMode-factoryPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-docker-application/demo-docker-application.iml" filepath="$PROJECT_DIR$/demo-docker-application/demo-docker-application.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-enum/demo-enum.iml" filepath="$PROJECT_DIR$/demo-enum/demo-enum.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-flyway/demo-flyway.iml" filepath="$PROJECT_DIR$/demo-flyway/demo-flyway.iml" />
