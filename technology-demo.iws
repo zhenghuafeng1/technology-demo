@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ce98ad3-f4db-47bc-b75e-75be4751f782" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/demo-liteflow/src/main/java/zhf/component/GoHomeCondComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-liteflow/src/main/java/zhf/component/GoHomeCondComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-liteflow/src/main/java/zhf/component/WatchTVComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-liteflow/src/main/java/zhf/component/WatchTVComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-liteflow/src/main/resources/config/flow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-liteflow/src/main/resources/config/flow.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-liteflow/src/test/java/zhf/component/ComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-liteflow/src/test/java/zhf/component/ComponentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/enums/DocTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/enums/DocTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/technology-demo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -281,7 +279,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="aws" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -535,7 +533,8 @@
       <workItem from="1670910348058" duration="1193000" />
       <workItem from="1670983653991" duration="4537000" />
       <workItem from="1671066079166" duration="1947000" />
-      <workItem from="1671153262904" duration="1429000" />
+      <workItem from="1671153262904" duration="3467000" />
+      <workItem from="1671411365762" duration="812000" />
     </task>
     <servers />
   </component>
@@ -640,5 +639,9 @@
   </component>
   <component name="WebViewSettings">
     <webview flattenPackages="false" showMembers="false" autoscrollToSource="false" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

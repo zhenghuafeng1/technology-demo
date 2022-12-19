@@ -8,16 +8,29 @@ package zhf.enums;
  * @Version 1.0
  **/
 public enum DocTypeEnum {
-    DIR("dir"),
-    DOC("doc");
-    private String value;
+    DIR("dir", "sss", "aaa"),
+    DOC("doc", "yyy", "bbb");
 
-    DocTypeEnum(String value) {
+    private String value;
+    private String feishuValue;
+    private String yuqueValue;
+
+    DocTypeEnum(String value, String feishuValue, String yuqueValue) {
         this.value = value;
+        this.feishuValue = feishuValue;
+        this.yuqueValue = yuqueValue;
     }
 
     public String getValue() {
         return this.value;
+    }
+
+    public String getFeishuValue() {
+        return this.feishuValue;
+    }
+
+    public String getYuqueValue() {
+        return this.yuqueValue;
     }
 
     public static boolean contains(String docType) {
