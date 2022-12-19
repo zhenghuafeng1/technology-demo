@@ -500,8 +500,8 @@
         <module name="demo-assert" />
         <module name="demo-zookeeper" />
         <module name="demo-function" />
-        <module name="demo-netty" />
         <module name="demo-lambda" />
+        <module name="demo-netty" />
         <module name="demo-adapter" />
         <module name="demo-docker-application" />
         <module name="demo-zeromq" />

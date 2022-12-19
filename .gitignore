@@ -31,3 +31,5 @@ hs_err_pid*
 
 /.flattened-pom.xml
 **/.flattened-pom.xml
+*.ipr
+*.iws
