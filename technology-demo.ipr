@@ -507,6 +507,7 @@
         <module name="demo-io" />
         <module name="demo-assert" />
         <module name="demo-designMode-factoryPattern" />
+        <module name="demo-designMode-builderPattern" />
         <module name="demo-designMode-strategyPattern" />
         <module name="demo-adapter" />
         <module name="demo-zeromq" />
@@ -523,6 +524,7 @@
       <module name="demo-consumer" target="1.8" />
       <module name="demo-designMode" target="1.8" />
       <module name="demo-designMode-abstractFactoryPattern" target="1.8" />
+      <module name="demo-designMode-builderPattern" target="1.8" />
       <module name="demo-designMode-factoryPattern" target="1.8" />
       <module name="demo-designMode-strategyPattern" target="1.8" />
       <module name="demo-docker-application" target="1.8" />
@@ -552,6 +554,7 @@
     <file url="file://$PROJECT_DIR$/demo-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-docker-application/src/main/java" charset="UTF-8" />
@@ -607,6 +610,7 @@
       <module name="demo-consumer" options="-parameters" />
       <module name="demo-designMode" options="" />
       <module name="demo-designMode-abstractFactoryPattern" options="-parameters" />
+      <module name="demo-designMode-builderPattern" options="-parameters" />
       <module name="demo-designMode-factoryPattern" options="-parameters" />
       <module name="demo-designMode-strategyPattern" options="-parameters" />
       <module name="demo-docker-application" options="-parameters" />
@@ -789,6 +793,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo-consumer/demo-consumer.iml" filepath="$PROJECT_DIR$/demo-consumer/demo-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-designMode/demo-designMode.iml" filepath="$PROJECT_DIR$/demo-designMode/demo-designMode.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/demo-designMode-abstractFactoryPattern.iml" filepath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/demo-designMode-abstractFactoryPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/demo-designMode-builderPattern.iml" filepath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/demo-designMode-builderPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/demo-designMode-factoryPattern.iml" filepath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/demo-designMode-factoryPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/demo-designMode-strategyPattern.iml" filepath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/demo-designMode-strategyPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-docker-application/demo-docker-application.iml" filepath="$PROJECT_DIR$/demo-docker-application/demo-docker-application.iml" />
