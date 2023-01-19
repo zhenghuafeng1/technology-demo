@@ -5,31 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ce98ad3-f4db-47bc-b75e-75be4751f782" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/color/Blue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/color/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/color/Green.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/color/Red.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/service/AbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/service/ColorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/service/FactoryProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/shape/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/shape/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/shape/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/shape/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/DesignModeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/controller/DesignModeCotroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/factoryPattern/ShapeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/DesignModeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/annotation/SetSex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/annotation/SetSexAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/controller/StrategyPatternController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/service/AbstractSetSex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/service/BaseSetSexService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/service/impl/BoySetSexService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/service/impl/GirlSetSexService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/service/impl/SetSexConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-tree/src/main/java/zhf/common/UrlEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-designMode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/DesignModeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/DesignModeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/controller/DesignModeCotroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/controller/DesignModeCotroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/factoryPattern/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/factoryPattern/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/factoryPattern/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java/zhf/service/ShapeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/java/zhf/factoryPattern/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf/factoryPattern/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-lambda/src/test/java/zhf/lambda/LambdaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-lambda/src/test/java/zhf/lambda/LambdaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-liteflow/src/test/java/zhf/component/ComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-liteflow/src/test/java/zhf/component/ComponentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-tree/src/main/java/zhf/utils/BuildUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-tree/src/main/java/zhf/utils/BuildUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/controller/WorkspaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/controller/WorkspaceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.iws" afterDir="false" />
     </list>
@@ -199,8 +191,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -241,7 +234,7 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="C:\Software\MavenRepository" />
         <option name="mavenHome" value="C:/Software/apache-maven-3.8.1" />
-        <option name="userSettingsFile" value="C:\Software\apache-maven-3.8.1\conf\settings.xml" />
+        <option name="userSettingsFile" value="C:\Software\apache-maven-3.8.1\conf\settings-local.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -297,13 +290,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/entity" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="aws" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -313,15 +306,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\GitPro\technology-demo\demo-workspace\src\main\java\zhf\entity" />
+      <recent name="F:\GitPro\technology-demo\demo-workspace\src\main\java\zhf\repository\sql" />
+      <recent name="F:\GitPro\technology-demo\demo-workspace\src\main\java\zhf\repository" />
       <recent name="F:\GitPro\technology-demo\demo-designMode\demo-designMode-factoryPattern\src\main\java\zhf" />
       <recent name="F:\GitPro\technology-demo\demo-workspace\src\main\java\zhf\base" />
-      <recent name="F:\GitPro\technology-demo\demo-flyway\src\main\resources\db\migration" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="zhf.controller" />
-      <recent name="zhf.service" />
-      <recent name="zhf.color" />
-      <recent name="zhf.shape" />
+      <recent name="zhf.repository.sql" />
+      <recent name="zhf.entity" />
+      <recent name="zhf.repository" />
+      <recent name="zhf.service.impl" />
       <recent name="zhf" />
     </key>
   </component>
@@ -332,7 +327,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DesignModeApplication (2)">
+  <component name="RunManager" selected="JUnit.LambdaTest.test">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -349,7 +344,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComponentTest.componentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComponentTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-liteflow" />
       <extension name="coverage">
         <pattern>
@@ -359,7 +354,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="zhf.component" />
       <option name="MAIN_CLASS_NAME" value="zhf.component.ComponentTest" />
-      <option name="METHOD_NAME" value="componentTest" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -370,16 +365,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComponentTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-liteflow" />
+    <configuration name="LambdaTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-lambda" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zhf.component.*" />
+          <option name="PATTERN" value="zhf.lambda.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zhf.component" />
-      <option name="MAIN_CLASS_NAME" value="zhf.component.ComponentTest" />
+      <option name="PACKAGE_NAME" value="zhf.lambda" />
+      <option name="MAIN_CLASS_NAME" value="zhf.lambda.LambdaTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -429,19 +424,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DesignModeApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-designMode-factoryPattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zhf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.DesignModeApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DesignModeApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="demo-designMode-abstractFactoryPattern" />
       <extension name="coverage">
@@ -455,8 +437,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DesignModeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-designMode" />
+    <configuration name="DesignModeApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-designMode-strategyPattern" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="zhf.*" />
@@ -471,6 +453,19 @@
     <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo-autowired" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.MainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkSpaceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-workspace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zhf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.WorkSpaceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -492,23 +487,23 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ComponentTest.componentTest" />
-      <item itemvalue="JUnit.ComponentTest.test" />
+      <item itemvalue="JUnit.ComponentTest.test2" />
+      <item itemvalue="JUnit.LambdaTest.test" />
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoLinuxApplication" />
       <item itemvalue="Spring Boot.MainApplication" />
       <item itemvalue="Spring Boot.ZookeeperApplication8102" />
-      <item itemvalue="Spring Boot.DesignModeApplication" />
-      <item itemvalue="Spring Boot.DesignModeApplication (1)" />
       <item itemvalue="Spring Boot.DesignModeApplication (2)" />
+      <item itemvalue="Spring Boot.DesignModeApplication (3)" />
+      <item itemvalue="Spring Boot.WorkSpaceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LambdaTest.test" />
+        <item itemvalue="Spring Boot.WorkSpaceApplication" />
+        <item itemvalue="Spring Boot.DesignModeApplication (3)" />
+        <item itemvalue="JUnit.ComponentTest.test2" />
         <item itemvalue="Spring Boot.DesignModeApplication (2)" />
-        <item itemvalue="Spring Boot.DesignModeApplication (1)" />
-        <item itemvalue="Spring Boot.DesignModeApplication" />
-        <item itemvalue="JUnit.ComponentTest.componentTest" />
-        <item itemvalue="JUnit.ComponentTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -566,7 +561,21 @@
       <workItem from="1671411365762" duration="812000" />
       <workItem from="1671412647439" duration="1702000" />
       <workItem from="1671430848310" duration="2145000" />
-      <workItem from="1671438360892" duration="2251000" />
+      <workItem from="1671438360892" duration="3358000" />
+      <workItem from="1671497896166" duration="1780000" />
+      <workItem from="1671616572749" duration="806000" />
+      <workItem from="1671670920228" duration="333000" />
+      <workItem from="1671693457095" duration="2057000" />
+      <workItem from="1671759726477" duration="179000" />
+      <workItem from="1671759976176" duration="6865000" />
+      <workItem from="1672026076922" duration="2186000" />
+      <workItem from="1672902552479" duration="4936000" />
+      <workItem from="1672973439638" duration="924000" />
+      <workItem from="1674011528990" duration="6782000" />
+      <workItem from="1674029135559" duration="282000" />
+      <workItem from="1674030680885" duration="901000" />
+      <workItem from="1674034533855" duration="591000" />
+      <workItem from="1674090113834" duration="2169000" />
     </task>
     <servers />
   </component>

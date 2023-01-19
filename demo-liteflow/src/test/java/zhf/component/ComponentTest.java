@@ -10,6 +10,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 import zhf.TestApp;
 import zhf.entity.PersonEntity;
 import zhf.enums.SexEnum;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -30,6 +34,15 @@ public class ComponentTest {
 
     @Autowired
     private FlowExecutor flowExecutor;
+
+    @Test
+    public void test2() {
+        PersonEntity personEntity = new PersonEntity();
+//        list.add("1");
+//        list.add("2");
+//        list.add("3");
+        System.out.println(Objects.equals(personEntity, null));
+    }
 
     @Test
     public void componentTest(){

@@ -488,27 +488,28 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo-flyway" />
-        <module name="demo-designMode-abstractFactoryPattern" />
         <module name="demo-cloud-consumer" />
-        <module name="demo-linux-application" />
-        <module name="demo-liteflow" />
         <module name="demo-enum" />
         <module name="demo-mapstruct" />
         <module name="demo-workspace" />
         <module name="demo-zuul" />
-        <module name="demo-io" />
         <module name="demo-consumer" />
-        <module name="demo-assert" />
-        <module name="demo-designMode-factoryPattern" />
         <module name="demo-zookeeper" />
         <module name="demo-function" />
         <module name="demo-lambda" />
         <module name="demo-netty" />
-        <module name="demo-adapter" />
         <module name="demo-docker-application" />
-        <module name="demo-zeromq" />
         <module name="demo-common" />
         <module name="demo-autowired" />
+        <module name="demo-designMode-abstractFactoryPattern" />
+        <module name="demo-linux-application" />
+        <module name="demo-liteflow" />
+        <module name="demo-io" />
+        <module name="demo-assert" />
+        <module name="demo-designMode-factoryPattern" />
+        <module name="demo-designMode-strategyPattern" />
+        <module name="demo-adapter" />
+        <module name="demo-zeromq" />
         <module name="demo-tree" />
         <module name="demo-security" />
       </profile>
@@ -523,6 +524,7 @@
       <module name="demo-designMode" target="1.8" />
       <module name="demo-designMode-abstractFactoryPattern" target="1.8" />
       <module name="demo-designMode-factoryPattern" target="1.8" />
+      <module name="demo-designMode-strategyPattern" target="1.8" />
       <module name="demo-docker-application" target="1.8" />
       <module name="demo-enum" target="1.8" />
       <module name="demo-flyway" target="1.8" />
@@ -551,6 +553,7 @@
     <file url="file://$PROJECT_DIR$/demo-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-docker-application/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-enum/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-flyway/src/main/java" charset="UTF-8" />
@@ -605,6 +608,7 @@
       <module name="demo-designMode" options="" />
       <module name="demo-designMode-abstractFactoryPattern" options="-parameters" />
       <module name="demo-designMode-factoryPattern" options="-parameters" />
+      <module name="demo-designMode-strategyPattern" options="-parameters" />
       <module name="demo-docker-application" options="-parameters" />
       <module name="demo-enum" options="-parameters" />
       <module name="demo-flyway" options="-parameters" />
@@ -786,6 +790,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo-designMode/demo-designMode.iml" filepath="$PROJECT_DIR$/demo-designMode/demo-designMode.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/demo-designMode-abstractFactoryPattern.iml" filepath="$PROJECT_DIR$/demo-designMode/demo-designMode-abstractFactoryPattern/demo-designMode-abstractFactoryPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/demo-designMode-factoryPattern.iml" filepath="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/demo-designMode-factoryPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/demo-designMode-strategyPattern.iml" filepath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/demo-designMode-strategyPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-docker-application/demo-docker-application.iml" filepath="$PROJECT_DIR$/demo-docker-application/demo-docker-application.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-enum/demo-enum.iml" filepath="$PROJECT_DIR$/demo-enum/demo-enum.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-flyway/demo-flyway.iml" filepath="$PROJECT_DIR$/demo-flyway/demo-flyway.iml" />
@@ -3259,13 +3264,13 @@
     </library>
     <library name="Maven: org.zeromq:jeromq:0.5.3-SNAPSHOT">
       <CLASSES>
-        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-20221203.203307-54.jar!/" />
+        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-20221203.203307-54-javadoc.jar!/" />
+        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-20221203.203307-54-sources.jar!/" />
+        <root url="jar://C:/Software/MavenRepository/org/zeromq/jeromq/0.5.3-SNAPSHOT/jeromq-0.5.3-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: tk.mybatis:mapper-base:1.1.5">
