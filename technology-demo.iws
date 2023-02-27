@@ -5,23 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ce98ad3-f4db-47bc-b75e-75be4751f782" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/DesignModeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/controller/DesignModeCotroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/item/Burger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/item/ChickenBurger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/item/Coke.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/item/ColdDrink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/item/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/item/Pepsi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/item/VegBurger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/pack/Bottle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/pack/Packing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/pack/Wrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/service/Meal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/main/java/zhf/service/MealBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-designMode/demo-designMode-builderPattern/src/test/java/zhf/BuilderPatternTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-designMode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-designMode/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-autowired/src/main/java/zhf/service/impl/UserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-autowired/src/test/java/zhf/service/AutowiredListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-autowired/src/test/java/zhf/service/AutowiredListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/DesignModeApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/annotation/SetSex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/annotation/SetSexAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/controller/StrategyPatternController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/entity/UserEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/service/AbstractSetSex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/service/BaseSetSexService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/service/impl/BoySetSexService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/service/impl/GirlSetSexService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-designMode/demo-designMode-strategyPattern/src/main/java/zhf/service/impl/SetSexConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-lambda/src/main/java/zhf/entity/UserInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-lambda/src/test/java/zhf/lambda/LambdaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-lambda/src/test/java/zhf/lambda/LambdaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-liteflow/src/test/java/zhf/component/ComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-liteflow/src/test/java/zhf/component/ComponentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-tree/src/main/java/zhf/common/ProductCloudNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-tree/src/main/java/zhf/common/UrlEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-tree/src/main/java/zhf/utils/BuildUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-tree/src/main/java/zhf/utils/BuildUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-workspace/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/controller/WorkspaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/controller/WorkspaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/entity/ResellerBillTaskEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/entity/ResellerOssInfoEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/entity/ResellerPlatformInfoEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/entity/model/ResellerPlatformInfoDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/enums/ResellerBillTaskStatusEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/repository/ResellerBillTaskRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/repository/ResellerOssInfoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/repository/ResellerPlatformInfoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/repository/sql/ResellerBillTaskMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/repository/sql/ResellerOssInfoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/repository/sql/ResellerPlatformInfoMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/technology-demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/technology-demo.iws" afterDir="false" />
     </list>
@@ -194,6 +209,7 @@
         <option value="AnnotationType" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -290,7 +306,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo-workspace/src/main/java/zhf/entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo-designMode/demo-designMode-factoryPattern/src/main/java/zhf" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -306,18 +322,19 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\GitPro\technology-demo\demo-workspace\src\main\java\zhf\entity" />
-      <recent name="F:\GitPro\technology-demo\demo-workspace\src\main\java\zhf\repository\sql" />
-      <recent name="F:\GitPro\technology-demo\demo-workspace\src\main\java\zhf\repository" />
       <recent name="F:\GitPro\technology-demo\demo-designMode\demo-designMode-factoryPattern\src\main\java\zhf" />
       <recent name="F:\GitPro\technology-demo\demo-workspace\src\main\java\zhf\base" />
+      <recent name="F:\GitPro\technology-demo\demo-flyway\src\main\resources\db\migration" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="zhf.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="zhf.controller" />
-      <recent name="zhf" />
+      <recent name="zhf.service.impl" />
       <recent name="zhf.repository.sql" />
       <recent name="zhf.entity" />
       <recent name="zhf.repository" />
+      <recent name="zhf" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -327,7 +344,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DesignModeApplication">
+  <component name="RunManager" selected="JUnit.AutowiredListTest.test2">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -344,17 +361,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BuilderPatternTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-designMode-builderPattern" />
+    <configuration name="AutowiredListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-autowired" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zhf.*" />
+          <option name="PATTERN" value="zhf.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zhf" />
-      <option name="MAIN_CLASS_NAME" value="zhf.BuilderPatternTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="zhf.service" />
+      <option name="MAIN_CLASS_NAME" value="zhf.service.AutowiredListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutowiredListTest.enumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-autowired" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zhf.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="zhf.service" />
+      <option name="MAIN_CLASS_NAME" value="zhf.service.AutowiredListTest" />
+      <option name="METHOD_NAME" value="enumTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -365,17 +402,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LambdaTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-lambda" />
+    <configuration name="AutowiredListTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-autowired" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zhf.lambda.*" />
+          <option name="PATTERN" value="zhf.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zhf.lambda" />
-      <option name="MAIN_CLASS_NAME" value="zhf.lambda.LambdaTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="zhf.service" />
+      <option name="MAIN_CLASS_NAME" value="zhf.service.AutowiredListTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutowiredListTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-autowired" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zhf.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="zhf.service" />
+      <option name="MAIN_CLASS_NAME" value="zhf.service.AutowiredListTest" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -437,35 +495,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DesignModeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-designMode-builderPattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zhf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.DesignModeApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo-autowired" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.MainApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WorkSpaceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-workspace" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zhf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="zhf.WorkSpaceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -487,22 +519,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.LambdaTest.test" />
+      <item itemvalue="JUnit.AutowiredListTest.enumTest" />
+      <item itemvalue="JUnit.AutowiredListTest.test1" />
+      <item itemvalue="JUnit.AutowiredListTest.test2" />
+      <item itemvalue="JUnit.AutowiredListTest" />
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoLinuxApplication" />
       <item itemvalue="Spring Boot.MainApplication" />
       <item itemvalue="Spring Boot.ZookeeperApplication8102" />
       <item itemvalue="Spring Boot.DesignModeApplication (3)" />
-      <item itemvalue="Spring Boot.WorkSpaceApplication" />
-      <item itemvalue="JUnit.BuilderPatternTest.test" />
-      <item itemvalue="Spring Boot.DesignModeApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DesignModeApplication" />
-        <item itemvalue="JUnit.BuilderPatternTest.test" />
-        <item itemvalue="JUnit.LambdaTest.test" />
-        <item itemvalue="Spring Boot.WorkSpaceApplication" />
+        <item itemvalue="JUnit.AutowiredListTest.test2" />
+        <item itemvalue="JUnit.AutowiredListTest" />
+        <item itemvalue="JUnit.AutowiredListTest.test1" />
+        <item itemvalue="JUnit.AutowiredListTest.enumTest" />
         <item itemvalue="Spring Boot.DesignModeApplication (3)" />
       </list>
     </recent_temporary>
@@ -576,7 +608,12 @@
       <workItem from="1674030680885" duration="901000" />
       <workItem from="1674034533855" duration="591000" />
       <workItem from="1674090113834" duration="2169000" />
-      <workItem from="1674097780914" duration="4326000" />
+      <workItem from="1676448873507" duration="2242000" />
+      <workItem from="1676513000867" duration="257000" />
+      <workItem from="1676949774736" duration="1812000" />
+      <workItem from="1677118071294" duration="308000" />
+      <workItem from="1677200497680" duration="1990000" />
+      <workItem from="1677226257018" duration="711000" />
     </task>
     <servers />
   </component>
@@ -617,6 +654,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

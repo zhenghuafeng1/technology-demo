@@ -10,19 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 import zhf.config.DocumentConfig;
 import zhf.config.DocumentFlowConfiguration;
 import zhf.entity.DocMainEntity;
-import zhf.entity.ResellerBillTaskEntity;
-import zhf.entity.ResellerPlatformInfoEntity;
 import zhf.entity.model.DocMainListResponseVO;
 import zhf.entity.model.DocMainSortRequest;
-import zhf.entity.model.ResellerPlatformInfoDto;
 import zhf.enums.DocTypeEnum;
-import zhf.repository.ResellerBillTaskRepository;
-import zhf.repository.ResellerPlatformInfoRepository;
 import zhf.service.impl.WorkspaceServiceImpl;
 
 import java.math.BigDecimal;
-import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * @Autor zhenghf
@@ -43,12 +36,6 @@ public class WorkspaceController {
 
     @Autowired
     private DocumentFlowConfiguration documentFlowConfiguration;
-
-    @Autowired
-    private ResellerPlatformInfoRepository resellerPlatformInfoRepository;
-
-    @Autowired
-    private ResellerBillTaskRepository resellerBillTaskRepository;
 
     @GetMapping("/getDocList")
     public DocMainListResponseVO getDocList() {
@@ -87,13 +74,5 @@ public class WorkspaceController {
     public boolean getDocType(@PathVariable("type") String type) {
 
         return DocTypeEnum.contains(type);
-    }
-
-    @GetMapping("/getAll")
-    public List<Long> getAll() {
-        List<ResellerBillTaskEntity> resellerBillTasks = resellerBillTaskRepository.queryNextSyncTask(null);
-        return resellerBillTasks.stream().map( e -> {
-            return e.getId();
-        }).collect(Collectors.toList());
     }
 }
